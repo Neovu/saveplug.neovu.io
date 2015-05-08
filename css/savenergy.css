@@ -23,7 +23,7 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -102,6 +102,9 @@ width: 100%;
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
+}
+.text-muted{
+    color: white;
 }
 
 
