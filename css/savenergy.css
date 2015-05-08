@@ -106,6 +106,24 @@ body {
   z-index: 20;
   background: #00AADB;
 }
+.navbar-toggle {
+  padding: 9px 10px;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  border: 5px solid transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover{
+  background-color: #5a5a5a;
+}
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
@@ -131,6 +149,22 @@ width: 100%;
 .navbar-inverse .navbar-nav > .active > a{
     border-radius: 5px;
     background: rgba(0,0,0,0.1);
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.dropdown-menu {
+  border: 0px; 
+  border-radius: 3px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .175);
+}
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
