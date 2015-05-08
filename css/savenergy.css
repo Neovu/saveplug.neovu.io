@@ -5,7 +5,7 @@
     background: #333;
 }
 .blue{
-    background: #00aadb;
+    background: #00BDF4;
 }
 .blue2{
     background: #00C6FF;
@@ -81,7 +81,7 @@ body {
 }
 .btn-default {
   border-color: #fff;
-  color: #222;
+  color: #5a5a5a;
   background-color: #fff;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
@@ -171,6 +171,9 @@ width: 100%;
 .carousel-indicators {
   bottom: 65px;
 }
+.carousel-indicators-mini {
+  bottom: 20px;
+}
 
 .item iframe{
     width: 100%;
@@ -207,6 +210,13 @@ width: 100%;
   color: #fff;
   background-color: #39DBC9;
   padding: 60px 0;
+}
+
+#about h2{
+    text-align: center;
+}
+#about p{
+    text-align: center;
 }
 
 
