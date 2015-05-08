@@ -7,6 +7,12 @@
 .blue{
     background: #00aadb;
 }
+.blue2{
+    background: #00C6FF;
+}
+.blue3{
+    background: #4CD7FF;
+}
 .yellow{
     background: #FFCC33;
 }
@@ -15,6 +21,72 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+.margin-top-10{
+    margin-top: 10px!important;
+}
+.margin-top-20{
+    margin-top: 20px!important;
+}
+.margin-top-30{
+    margin-top: 30px!important;
+}
+.margin-top-40{
+    margin-top: 40px!important;
+}
+.margin-top-50{
+    margin-top: 50px!important;
+}
+.margin-top-60{
+    margin-top: 60px!important;
+}
+.margin-top-70{
+    margin-top: 70px!important;
+}
+.padding-top-10{
+    padding-top: 10px!important;
+}
+.padding-top-20{
+    padding-top: 20px!important;
+}
+.padding-top-30{
+    padding-top: 30px!important;
+}
+.padding-top-40{
+    padding-top: 40px!important;
+}
+.padding-top-50{
+    padding-top: 50px!important;
+}
+.padding-top-60{
+    padding-top: 60px!important;
+}
+.padding-top-70{
+    padding-top: 70px!important;
+}
+
+.padding-bottom-50{
+    padding-bottom: 50px!important;
+}
+
+
+.btn-xl {
+  padding: 15px 30px;
+}
+.btn {
+  border: 0;
+  border-radius: 300px;
+  text-transform: uppercase;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 700;
+}
+.btn-default {
+  border-color: #fff;
+  color: #222;
+  background-color: #fff;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
 
 
 
@@ -22,12 +94,17 @@ body {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar {
+   margin-bottom: 0; 
+}
 .navbar-wrapper {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 20;
+  background: #00AADB;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -39,9 +116,16 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+.navbar-inverse .navbar-brand {
+  margin-top:10px;
+}
 
 a.navbar-brand img {
 width: 100%;
+}
+
+.navbar-inverse .navbar-collapse{
+   margin-top: 20px; 
 }
 
 .navbar-inverse .navbar-nav > .active > a{
@@ -54,17 +138,26 @@ width: 100%;
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 768px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  text-shadow: none;
+  right: 15%;
+  top: 200px;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: right;
+ 
 }
+
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 768px;
   background-color: #00aadb;
 /*  background:  no-repeat center center fixed #00aadb;*/
 }
@@ -73,7 +166,10 @@ width: 100%;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 768px;
+}
+.carousel-indicators {
+  bottom: 65px;
 }
 
 .item iframe{
@@ -107,6 +203,12 @@ width: 100%;
     color: white;
 }
 
+.bg-primary {
+  color: #fff;
+  background-color: #39DBC9;
+  padding: 60px 0;
+}
+
 
 /* Featurettes
 ------------------------- */
@@ -136,9 +238,7 @@ width: 100%;
   }
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 10px;
-  }
+  
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left:  15px;
