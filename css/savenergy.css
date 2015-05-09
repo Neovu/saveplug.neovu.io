@@ -281,7 +281,40 @@ width: 100%;
   letter-spacing: -1px;
 }
 
+.featurette img{
+    text-align: center;
+}
 
+#sidebar {
+  position: absolute;
+  right: -3px;
+  top: 180px;
+  z-index: 100;
+}
+#sidebar nav {
+  background: #444;
+  padding: 5px;
+  width: 38px;
+  margin-left: 0;
+  cursor: pointer;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  border-radius: 2px;
+
+}
+#sidebar nav a {
+  color: #fff;
+  font-family: 'SourceSansPro-Light';
+  font-size: 1.1em;
+  text-transform: uppercase;
+  opacity: 1;
+  text-decoration: none;
+}
+#sidebar nav a:hover {
+  opacity: .9;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
