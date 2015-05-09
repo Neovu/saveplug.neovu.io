@@ -5,7 +5,7 @@
     background: #333;
 }
 .gray2 {
-  background: #DBDBDB;
+    background: #DBDBDB;
 }
 .blue{
     background: #00BDF4;
@@ -31,8 +31,8 @@
 
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+    padding-bottom: 40px;
+    color: #5a5a5a;
 }
 .margin-top-10{
     margin-top: 10px!important;
@@ -83,22 +83,22 @@ body {
 
 
 .btn-xl {
-  padding: 15px 30px;
+    padding: 15px 30px;
 }
 .btn {
-  border: 0;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-  font-weight: 700;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
 }
 .btn-default {
-  border-color: #fff;
-  color: #5a5a5a;
-  background-color: #fff;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
+    border-color: #fff;
+    color: #5a5a5a;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
 }
 
 
@@ -109,54 +109,56 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 .navbar {
-   margin-bottom: 0; 
+    margin-bottom: 0; 
 }
+
 .navbar-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-  background: #00AADB;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background: #00AADB;
 }
 .navbar-toggle {
-  padding: 9px 10px;
-  margin-top: 20px;
-  margin-right: 15px;
-  margin-bottom: 8px;
-  border: 5px solid transparent;
+    padding: 9px 10px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    border: 5px solid transparent;
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
 }
 .navbar-inverse .navbar-toggle:hover{
-  background-color: #5a5a5a;
+    background-color: #5a5a5a;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
-  padding-right: 0;
-  padding-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 .navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .navbar-inverse .navbar-brand {
-  margin-top:10px;
+    margin-top:10px;
+    margin-left: 10px;
 }
 
 a.navbar-brand img {
-width: 100%;
+    width: 100%;
 }
 
 .navbar-inverse .navbar-collapse{
-   margin-top: 20px; 
+    margin-top: 20px; 
 }
 
 .navbar-inverse .navbar-nav > .active > a{
@@ -167,20 +169,30 @@ width: 100%;
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: transparent;
+    background-color: transparent;
 }
 .dropdown-menu {
-  border: 0px; 
-  border-radius: 3px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .175);
+    border: 0px; 
+    border-radius: 3px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .175);
 }
 .navbar-nav > li > .dropdown-menu {
-  margin-top: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+    margin-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .login a{
     color:#222!important;
+}
+
+.navbar-collapse {
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, .1);
+    
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: #00AADB;
+
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -188,41 +200,41 @@ width: 100%;
 
 /* Carousel base class */
 .carousel {
-  height: 768px;
+    height: 768px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  z-index: 10;
-  text-shadow: none;
-  right: 15%;
-  top: 200px;
-  left: 15%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: right;
- 
+    z-index: 10;
+    text-shadow: none;
+    right: 15%;
+    top: 200px;
+    left: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: right;
+
 }
 
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 768px;
-  background-color: #00aadb;
-/*  background:  no-repeat center center fixed #00aadb;*/
+    height: 768px;
+    background-color: #00aadb;
+    /*  background:  no-repeat center center fixed #00aadb;*/
 }
 .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 768px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 768px;
 }
 .carousel-indicators {
-  bottom: 65px;
+    bottom: 65px;
 }
 .carousel-indicators-mini {
-  bottom: 20px;
+    bottom: 20px;
 }
 
 .item iframe{
@@ -236,30 +248,30 @@ width: 100%;
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  padding-right: 15px;
-  padding-left: 15px;
+/*    padding-right: 15px;
+    padding-left: 15px;*/
 }
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .marketing h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .text-muted{
     color: white;
 }
 
 .bg-primary {
-  color: #fff;
-  background-color: #39DBC9;
-  padding: 60px 0;
+    color: #fff;
+    background-color: #39DBC9;
+    padding: 60px 0;
 }
 
 #about {
@@ -271,14 +283,14 @@ width: 100%;
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 .featurette img{
@@ -286,34 +298,34 @@ width: 100%;
 }
 
 #sidebar {
-  position: absolute;
-  right: -3px;
-  top: 180px;
-  z-index: 100;
+    position: absolute;
+    right: -3px;
+    top: 180px;
+    z-index: 100;
 }
 #sidebar nav {
-  background: #444;
-  padding: 5px;
-  width: 38px;
-  margin-left: 0;
-  cursor: pointer;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  border-radius: 2px;
+    background: #444;
+    padding: 5px;
+    width: 38px;
+    margin-left: 0;
+    cursor: pointer;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    border-radius: 2px;
 
 }
 #sidebar nav a {
-  color: #fff;
-  font-family: 'SourceSansPro-Light';
-  font-size: 1.1em;
-  text-transform: uppercase;
-  opacity: 1;
-  text-decoration: none;
+    color: #fff;
+    font-family: 'SourceSansPro-Light';
+    font-size: 1.1em;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration: none;
 }
 #sidebar nav a:hover {
-  opacity: .9;
+    opacity: .9;
 }
 
 /* RESPONSIVE CSS
@@ -321,44 +333,60 @@ width: 100%;
 
 @media (min-width: 768px) {
 
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
-  /* Navbar positioning foo */
-  
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left:  15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left:  0;
-  }
+    /* Navbar positioning foo */
 
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left:  15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left:  0;
+    }
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+}
+@media (max-width: 767px){
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #0E86A9;
+    }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:320px){
+    .navbar-collapse {
+        float: left;
+        width: 100%;
+    }
+    .nav-bar-nav {
+        float: left;
+    }
 }
 
 
