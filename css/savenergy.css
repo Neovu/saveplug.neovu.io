@@ -4,6 +4,9 @@
 .gray{
     background: #333;
 }
+.gray2 {
+  background: #DBDBDB;
+}
 .blue{
     background: #00BDF4;
 }
@@ -16,6 +19,16 @@
 .yellow{
     background: #FFCC33;
 }
+.green{
+    background: #1AFCC0;
+}
+.green2{
+    background-color: #39DBC9;
+}
+.green3{
+    background: #6FFFB2;
+}
+
 
 body {
   padding-bottom: 40px;
@@ -166,6 +179,9 @@ width: 100%;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+.login a{
+    color:#222!important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -246,10 +262,7 @@ width: 100%;
   padding: 60px 0;
 }
 
-#about h2{
-    text-align: center;
-}
-#about p{
+#about {
     text-align: center;
 }
 
