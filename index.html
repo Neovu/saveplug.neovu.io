@@ -23,12 +23,13 @@
         <![endif]-->
 
         <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="css/savenergy.css" rel="stylesheet">
     </head>
     <!-- NAVBAR
     ================================================== -->
-    <body>
-        <div class="navbar-wrapper">
+    <body data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+        <div class="navbar-wrapper" id="saveNav">
             <div class="container">
 
                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -88,16 +89,16 @@
 
                 <div class="item active">
 
-                    <img src="img/background_youdance.jpg" alt="First slide"> -->
+                    <!--<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="First slide">-->
                     <!--<iframe  src="//www.youtube.com/embed/lvZfU_x_NGc?controls=0&showinfo=0&vq=hd1080&modestbranding=1&fs=0" frameborder="0"></iframe>
                     <!--           <iframe src="//player.vimeo.com/video/97671235?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>-->
                     <div class="container">
-
+                        <img src="img/saveplug.png" alt="First slide">
                         <div class="carousel-caption">
 
 
                             <h1>Less, but better</h1>
-                            <p>Apresentamos Savernegy fácil, rápido e ágil.</p>
+                            <p>You save energy, aid the planet and save your wallet.</p>
 
 
                             <p><a class="btn btn-xl btn-default" href="#" role="button">BUY NOW</a></p>
@@ -143,6 +144,11 @@
         <!-- Marketing messaging and featurettes
         ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
+        <section class="bg-primary">
+            <center>
+        <iframe width="400" height="240"  src="//www.youtube.com/embed/lvZfU_x_NGc?controls=0&showinfo=0&vq=hd1080&modestbranding=1&fs=0" frameborder="0" align="center" id="video-save"></iframe>
+       
+            </center>        </section>
         <section class="bg-primary">
             <div class="container">
                 <div class="row">
@@ -201,15 +207,17 @@
 
             <!-- START THE FEATURETTES -->
 
-            <div class="full blue3 padding-top-50 padding-bottom-50">
+            <div class="full blue3 padding-top-70 padding-bottom-50">
                 <div class="container featurette">
-                    <div class="col-md-7">
+                    <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading">Connect the saveplug. <br><span class="text-muted">Wow! Your home is smart.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                        <p><a class="btn btn-xl btn-default" href="#" role="button">Details</a></p>
+                        <p><a class="btn btn-xl btn-default" href="http://www.saveplug.html" role="button">Details</a></p>
                     </div>
                     <div class="col-md-5">
-                        <img class="featurette-image img-responsive" src="img/saveplug-top.svg" alt="Saveplug: connect any diveices and zaz it's smart">
+                        <img class="featurette-image img-responsive 1" src="img/saveplug-top.svg" alt="Saveplug: connect any diveices and zaz it's smart">
+                        <img class="featurette-image img-responsive hidden 2" src="img/saveplug-top2.svg" alt="Saveplug: connect any diveices and zaz it's smart">
+                        <img class="featurette-image img-responsive hidden 3" src="img/saveplug-top3.svg" alt="Saveplug: connect any diveices and zaz it's smart">
                         <br><br><br>
                         <ol class="carousel-indicators carousel-indicators-mini">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -222,12 +230,12 @@
 
 
 
-            <div class="full blue2 padding-top-50 padding-bottom-50">
+            <div class="full blue2 padding-top-70 padding-bottom-50 padd">
                 <div class="container featurette">
                     <div class="col-md-5">
                         <img class="featurette-image img-responsive" src="img/saveapp.svg" alt="Saveapp from savenergy">
                     </div>
-                    <div class="col-md-7 text-right">
+                    <div class="col-md-7 text-right padding-top-50">
                         <h2 class="featurette-heading space-left">An amazing usefull app.<br><span class="text-muted">You'll blow your mind.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         <p><a class="btn btn-xl btn-default" href="#" role="button">Go Google Play</a></p>
@@ -235,9 +243,9 @@
                 </div>
             </div>
 
-            <div class="full gray2 padding-top-50 padding-bottom-50">
+            <div class="full gray2 padding-top-70 padding-bottom-50">
                 <div class="container featurette">
-                    <div class="col-md-7 text-right">
+                    <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading space-left">Savebox, coming soon. <br><span class="text-muted">And much more for you.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         <p><a class="btn btn-xl btn-default" href="#" role="button">Details</a></p>
@@ -251,7 +259,7 @@
             <!-- /END THE FEATURETTES -->
 
             <!-- CONTACT -->
-            <div class="full padding-bottom-50 padding-top-5">
+            <div class="full padding-bottom-50 padding-top-50" id="contact">
                 <div class="container featurette">
                     <div class="col-md-6">
                         <h2 class="featurette-heading">Find us. <span class="text-muted">Now.</span></h2>
@@ -329,15 +337,65 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/scrollspy.js"></script>
         <script src="assets/js/docs.min.js"></script>
-        <!--    <script>
+        <script>
             var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
-                $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/ 
-                $( window ).resize(function() {
-                        var altura_tela = $(window).height();
-                        $("#myCarousel, .carousel .item").height(altura_tela);
-                });
-            </script>-->
+            $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/
+            $(window).resize(function () {
+                var altura_tela = $(window).height();
+                $("#myCarousel, .carousel .item").height(altura_tela);
+            });
+
+            // strict just to keep concept of bootstrap
+            +function ($) {
+                'use strict';
+
+
+// spy and scroll menu boogey
+                $(".navbar-nav li a[href^='#']").on('click', function (e) {
+
+// prevent default anchor click behavior
+                    e.preventDefault()
+
+// store hash
+                    var hash = this.hash
+
+// animate
+                    $('html, body').animate({
+                        scrollTop: $(this.hash).offset().top - 80
+                    }, 1000, function () {
+                        window.location.hash = hash - 80
+                    })
+
+                })
+
+            }(jQuery);
+            
+            // VIEWS DEVICE
+    
+    $(".featurette ol li:nth-child(1)").click(function() {
+        $('.featurette-image.1').addClass('visible');
+        $('.featurette-image.1').removeClass('hidden');
+        $('.featurette-image.2').addClass('hidden');
+        $('.featurette-image.3').addClass('hidden');
+        return false;
+    });
+    $(".featurette ol li:nth-child(2)").click(function() {
+        $('.featurette-image.2').addClass('visible');
+        $('.featurette-image.2').removeClass('hidden');
+        $('.featurette-image.1').addClass('hidden');
+        $('.featurette-image.3').addClass('hidden');
+        return false;
+    });
+    $(".featurette ol li:nth-child(3)").click(function() {
+        $('.featurette-image.3').addClass('visible');
+        $('.featurette-image.3').removeClass('hidden');
+        $('.featurette-image.2').addClass('hidden');
+        $('.featurette-image.1').addClass('hidden');
+        return false;
+    });
+        </script>
 
     </body>
 </html>
