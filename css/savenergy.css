@@ -58,6 +58,10 @@ body {
 .margin-top-70{
     margin-top: 70px!important;
 }
+
+.margin-bottom-30{
+    margin-bottom: 30px!important;
+}
 .padding-top-10{
     padding-top: 10px!important;
 }
@@ -139,7 +143,7 @@ body {
 .list-group-item-spec {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: 20px 15px 40px;
     margin-bottom: -1px;
     background-color: transparent; 
     border: 1px solid #3A3A3A;
