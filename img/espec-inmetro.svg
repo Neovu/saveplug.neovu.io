@@ -3,8 +3,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="160px" height="126px" viewBox="2560 1864 160 126" enable-background="new 2560 1864 160 126" xml:space="preserve">
-<image overflow="visible" width="1318" height="1002" xlink:href="../../../../../../../Desktop/Screen Shot 2015-05-11 at 12.25.16 PM.png"  transform="matrix(0.5 0 0 0.5 1710.4697 718.0498)">
-</image>
 <image overflow="visible" enable-background="new    " width="942" height="1120" xlink:href="../../../../../../../Desktop/Screen Shot 2015-05-09 at 1.33.03 PM.png"  transform="matrix(0.5 0 0 0.5 -8130.0127 -8051.0127)">
 </image>
 <g>
@@ -181,10 +179,6 @@
 	<path fill="#FFFFFF" d="M714.895,280.718c0-4.736-3.84-8.575-8.575-8.575H91.029c-4.736,0-8.575,3.839-8.575,8.575v179.324h632.44
 		V280.718z"/>
 </g>
-<image overflow="visible" width="160" height="126" xlink:href="../../../../../../../Desktop/colors silver black si.jpg"  transform="matrix(1 0 0 1 2136 2005.4307)">
-</image>
-<image overflow="visible" width="160" height="126" xlink:href="../../../../../../../Desktop/usb wireless connection si.jpg"  transform="matrix(1 0 0 1 2136 1864)">
-</image>
 <g>
 	<circle fill="#FFFFFF" stroke="#3A3A3A" stroke-miterlimit="10" cx="2515.275" cy="1964.765" r="29.395"/>
 	<path fill="#222222" stroke="#3A3A3A" stroke-miterlimit="10" d="M2515.275,1935.37v58.789c16.234,0,29.395-13.16,29.395-29.395
@@ -426,4 +420,8 @@
 			c0,0.001,0,0.003,0,0.004c0.361,0,0.723-0.007,1.084,0.003C2657.165,1953.464,2657.491,1953.9,2657.317,1954.599z"/>
 	</g>
 </g>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#E6E6E6" d="M722.963,280.718h-10.519v-6.575c0-1.104-0.896-2-2-2H84.454
+	c-1.104,0-2,0.896-2,2v200.024c0,1.104,0.896,2,2,2h336.115v99.677c0,1.104,0.896,2,2,2h103.948c1.104,0,2-0.896,2-2v-99.677
+	h181.927c1.104,0,2-0.896,2-2v-18.213h10.519c1.923,0,3.482-0.896,3.482-2V282.718C726.445,281.614,724.886,280.718,722.963,280.718
+	z"/>
 </svg>
