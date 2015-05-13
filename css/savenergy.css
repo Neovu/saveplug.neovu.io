@@ -169,7 +169,7 @@ body {
     right: 0;
     left: 0;
     z-index: 20;
-    background: #00AADB;
+    background: rgba(0, 170, 219, 0.85);
     letter-spacing: 1px;
     font-size: 1.25em;
     font-weight: 100;
