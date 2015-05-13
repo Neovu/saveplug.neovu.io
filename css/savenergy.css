@@ -36,6 +36,8 @@
 body {
     padding-bottom: 40px;
     color: #5a5a5a;
+    font-weight: 200;
+    
 }
 .margin-top-10{
     margin-top: 10px!important;
@@ -117,10 +119,10 @@ body {
     display: block;
 }
 
-#video-save{
+/*#video-save{
     height: 50%;
     width: 50%;
-    float: center;}
+    float: center;}*/
 .border-rounded{
     border-radius: 3px;
 }
@@ -168,9 +170,10 @@ body {
     left: 0;
     z-index: 20;
     background: #00AADB;
-    font-weight: 100;
     letter-spacing: 1px;
     font-size: 1.25em;
+    font-weight: 100;
+    
 }
 .navbar-toggle {
     padding: 9px 10px;
@@ -265,7 +268,9 @@ a.navbar-brand img {
     padding-bottom: 20px;
     color: #fff;
     text-align: right;
-
+}
+.carousel-caption h1{
+    font-weight: 100;
 }
 
 
@@ -323,7 +328,7 @@ a.navbar-brand img {
     text-align: center;
 }
 .marketing h2 {
-    font-weight: normal;
+    font-weight: 100;
 }
 .marketing .col-lg-4 p {
     margin-right: 10px;
@@ -396,6 +401,12 @@ a.navbar-brand img {
     margin-bottom: 0;
 }
 
+.value{
+    background-image: url("../img/bg-value.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
