@@ -208,7 +208,7 @@
                     <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading">Connect the saveplug. <br><span class="text-muted">Wow! Your home is smart.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                        <p><a class="btn btn-xl btn-default" href="http://www.saveplug.html" role="button">Details</a></p>
+                        <p><a class="btn btn-xl btn-default" href="saveplug.html" role="button">Details</a></p>
                     </div>
                     <div class="col-md-5">
                         <img class="featurette-image img-responsive 1" src="img/saveplug-top.svg" alt="Saveplug: connect any diveices and zaz it's smart">
@@ -410,9 +410,39 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/savenergy.js"></script>
+        <script src="js/jquery.i18n.properties.js"></script>
         <script src="js/scrollspy.js"></script>
         <script src="assets/js/docs.min.js"></script>
-        <script src="js/savenergy.js"></script>
+        <script type="text/javascript">
+            // load I18N bundles
+            $(document).ready(function() {
+                loadBundles($.i18n.browserLang());
+
+                // configure language combo box
+                $('#lang').change(function() {
+                    var selection = $('#lang option:selected').val();
+                    loadBundles(selection !== 'browser' ? selection : $.i18n.browserLang());
+
+                });
+            });
+
+            function loadBundles(lang) {
+                $.i18n.properties({
+                    name: 'Messages',
+                    path: 'bundle/',
+                    mode: 'both',
+                    language: lang,
+                    callback: function() {
+                        //$("#msg_welcome").text($.i18n.prop('msg_welcome'));
+                        $("#msg_welcome").text(msg_welcome);
+                        $("#msg_selLang").text(msg_selLang(lang));
+                    }
+                });
+            }
+
+        </script>
+        
 
     </body>
 </html>
