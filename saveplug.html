@@ -45,18 +45,8 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class=""><a href="#works">How works</a></li>
-                                <li ><a href="#about">Overview</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Saveplug</a></li>
-                                        <li><a href="#">Savapp</a></li>
-                                        <li><a href="savebox.html">Savebox</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#contact">Find us</a></li>
-                                <li><a href="buy.html" class="last-child-50">Buy</a></li>
+
+                                <li><a href="index.html" class="last-child-50">voltar</a></li>
                                 <li class="active"><a href="http://www.savenergies.com">Login</a></li>
                             </ul>
                         </div>
@@ -71,7 +61,7 @@
         ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="marketing padding-top-70">
+        <div class="marketing padding-top-70" id="detail">
 
             <!-- Three columns of text below the carousel -->
 
@@ -80,9 +70,9 @@
             <div class="full gray2 padding-top-50 padding-bottom-50">
                 <div class="container featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading">Connect the saveplug. <br><span class="text-muted">Wow! Your home is smart.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                            <a href="#">specification</a>
+                        <h2 class="featurette-heading">Buy the saveplug. <br><span class="text-muted">U$ 60 per unity.</span></h2>
+                        <p class="lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+                            <a href="#specification">specification</a>
                         </p>
                         <!-- BEGIN FORM-->
                         <div class="col-md-12 padding-top-40">
@@ -127,7 +117,7 @@
                             </div>
                         </div>-->
 
-            <div class="full gray padding-top-50 padding-bottom-50">
+            <div class="full gray padding-top-50 padding-bottom-50" id="specification">
                 <div class="container featurette">
                     <div class="col-md-12">
                         <h2 class="featurette-heading space-left margin-bottom-30">Specifications</h2>
@@ -135,7 +125,7 @@
                     <div class="col-md-2 text-center">
                         <div>Zero config</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-color.svg" />
+                            <img src="img/espec-config.svg" />
                             <p>Yes</p>
                         </div>
 
@@ -148,10 +138,10 @@
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
-                        <div>Tension</div>
+                        <div>Voltage</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-color.svg" class="img-responsive"/>
-                            <p>220 volts</p>
+                            <img src="img/espec-tension.svg" class="img-responsive"/>
+                            <p>110 / 240 volts</p>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
@@ -197,7 +187,7 @@
                                         <i class="icon-ok text-danger"></i><span class="pull-left">Weight</span>
                                         <span class="pull-right">182 g</span></li>
                                     <li class="list-group-item-spec">
-                                        <i class="icon-ok text-danger"></i><span class="pull-left">Tension</span>
+                                        <i class="icon-ok text-danger"></i><span class="pull-left">Voltage</span>
                                         <span class="pull-right">100/240 VAC</span></li>
                                     <li class="list-group-item-spec">
                                         <i class="icon-ok text-danger"></i><span class="pull-left">Frequency</span>
@@ -217,7 +207,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <p><a class="btn btn-xl btn-default" href="#" role="button">Details</a></p>
+                        <p><a class="btn btn-xl btn-default" href="#detail" role="button">Details</a></p>
                     </div>
                     <div class="col-md-5 padding-top-70">
                         <img class="featurette-image img-responsive" src="img/sketch-saveplug.svg" alt="Generic placeholder image">
@@ -260,14 +250,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="assets/js/docs.min.js"></script>
-        <!--    <script>
-            var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
-                $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/ 
-                $( window ).resize(function() {
-                        var altura_tela = $(window).height();
-                        $("#myCarousel, .carousel .item").height(altura_tela);
-                });
-            </script>-->
+        <script src="js/savenergy.js"></script>
 
     </body>
 </html>

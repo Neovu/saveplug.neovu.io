@@ -46,24 +46,21 @@
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li ><a href="#works">Overview</a></li>
+                                <li><a href="#products">Products</a></li>
                                 <li><a href="#plans" class="last-child-50">Plans</a></li>
+                                <li><a href="#contact">Find us</a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="saveplug.html">Saveplug</a></li>
-                                        <li><a href="#">Savapp</a></li>
-                                        <li><a href="savebox.html">Savebox</a></li>
-
-
+                                        <li><a href="saveplug.html">SavePlug</a></li>
+                                        <li><a href="savebox.html">SaveBox</a></li>
+                                        <li><a href="savebox.html">SaveFlow</a></li>
                                         <!--               <li class="divider"></li>
                                                    <li class="dropdown-header">Nav header</li>
                                                      <li><a href="#">Separated link</a></li>
                                                      <li><a href="#">One more separated link</a></li> -->
                                     </ul>
                                 </li>
-
-                                <!--                <li><a href="#specs">Especificação</a></li>-->
-                                <li><a href="#contact">Find us</a></li>
                                 <li class="active"><a href="http://www.savenergies.com">Login</a></li>
                             </ul>
                         </div>
@@ -92,7 +89,7 @@
                     <!--<iframe  src="//www.youtube.com/embed/lvZfU_x_NGc?controls=0&showinfo=0&vq=hd1080&modestbranding=1&fs=0" frameborder="0"></iframe>
                     <!--           <iframe src="//player.vimeo.com/video/97671235?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>-->
                     <div class="container">
-                        <img src="img/saveplug.png" alt="First slide">
+<!--                        <img src="img/saveplug.png" alt="First slide">-->
                         <div class="carousel-caption">
 
 
@@ -112,7 +109,7 @@
                             <h1>Know Savapp.</h1>
                             <p>The inteligence behind Savenergy.</p>
 
-                            <p><a class="btn btn-xl btn-default" href="#" role="button">Learn more</a></p>
+                            <p><a class="btn btn-xl btn-default" href="#" role="button">Go Google Play</a></p>
                         </div>
 
                     </div>
@@ -122,10 +119,10 @@
                     <div class="container">
                         <div class="carousel-caption">
                          
-                                          <h1>less, but better.</h1>
+                                          <h1>Less, but better.</h1>
                                           <p>You save energy, aid the planet and save your wallet.</p>
                             
-                                          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+<!--                                          <p><a class="btn btn-lg btn-info" href="#" role="button">Browse gallery</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -183,7 +180,7 @@
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-lg-4 padding-top-50">
-                    <img class="" src="img/user-friendly.svg" alt="Generic placeholder image">
+                    <img class="" src="img/budget.svg" alt="Generic placeholder image">
                     <h2>Save money on budget's home</h2>
                     <!--                    <h2>Really save energy in a fun way</h2>-->
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -206,7 +203,7 @@
 
             <!-- START THE FEATURETTES -->
 
-            <div class="blue3 padding-top-70 padding-bottom-50">
+            <div class="blue3 padding-top-70 padding-bottom-50" id="products">
                 <div class="container featurette">
                     <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading">Connect the saveplug. <br><span class="text-muted">Wow! Your home is smart.</span></h2>
@@ -368,11 +365,11 @@
                     <div class="col-md-6">
                         <h2 class="featurette-heading">Follow us. <span class="text-muted">Now.</span></h2>
                         <ul class="list-inline">
-                            <li><a href="https://www.facebook.com/SavenergyEcothings"><img src="img/face-logo.svg" alt="facebook from savenergy" /></a>
+                            <li><a href="https://www.facebook.com/SavenergyEcothings" target="blank"><img src="img/face-logo.svg" alt="facebook from savenergy" /></a>
                             </li>
-                            <li><a href="https://twitter.com/savenergy_me"><img src="img/tweet-logo.svg" alt="twitter from savenergy"/></a>
+                            <li><a href="https://twitter.com/savenergy_me" target="blank"><img src="img/tweet-logo.svg" alt="twitter from savenergy"/></a>
                             </li>
-                            <li><a href="https://github.com/neovu"><img src="img/git-logo.svg" alt="git from neovu owner of the savenergy"/></a>
+                            <li><a href="https://github.com/neovu" target="blank"><img src="img/git-logo.svg" alt="git from neovu owner of the savenergy"/></a>
                             </li>
                         </ul>
 
@@ -415,63 +412,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scrollspy.js"></script>
         <script src="assets/js/docs.min.js"></script>
-        <script>
-            var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
-            $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/
-            $(window).resize(function () {
-                var altura_tela = $(window).height();
-                $("#myCarousel, .carousel .item").height(altura_tela);
-            });
-
-            // strict just to keep concept of bootstrap
-            +function ($) {
-                'use strict';
-
-
-// spy and scroll menu boogey
-                $(".navbar-nav li a[href^='#']").on('click', function (e) {
-
-// prevent default anchor click behavior
-                    e.preventDefault()
-
-// store hash
-                    var hash = this.hash
-
-// animate
-                    $('html, body').animate({
-                        scrollTop: $(this.hash).offset().top - 80
-                    }, 1000, function () {
-                        window.location.hash = hash - 80
-                    })
-
-                })
-
-            }(jQuery);
-            
-            // VIEWS DEVICE
-    
-    $(".featurette ol li:nth-child(1)").click(function() {
-        $('.featurette-image.1').addClass('visible');
-        $('.featurette-image.1').removeClass('hidden');
-        $('.featurette-image.2').addClass('hidden');
-        $('.featurette-image.3').addClass('hidden');
-        return false;
-    });
-    $(".featurette ol li:nth-child(2)").click(function() {
-        $('.featurette-image.2').addClass('visible');
-        $('.featurette-image.2').removeClass('hidden');
-        $('.featurette-image.1').addClass('hidden');
-        $('.featurette-image.3').addClass('hidden');
-        return false;
-    });
-    $(".featurette ol li:nth-child(3)").click(function() {
-        $('.featurette-image.3').addClass('visible');
-        $('.featurette-image.3').removeClass('hidden');
-        $('.featurette-image.2').addClass('hidden');
-        $('.featurette-image.1').addClass('hidden');
-        return false;
-    });
-        </script>
+        <script src="js/savenergy.js"></script>
 
     </body>
 </html>
