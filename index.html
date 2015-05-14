@@ -93,7 +93,7 @@
                         <div class="carousel-caption">
 
 
-                            <h1>The newest SavePlug.</h1>
+                            <h1 id="msg_welcome_1">The newest SavePlug.</h1>
                             <p>An easy way to automate your home.</p>
 
 
@@ -106,7 +106,7 @@
                     <div class="container">
                         <div class="carousel-caption">
 
-                            <h1>Know Savapp.</h1>
+                            <h1 >Know Savapp.</h1>
                             <p>The inteligence behind Savenergy.</p>
 
                             <p><a class="btn btn-xl btn-default" href="#" role="button">Go Google Play</a></p>
@@ -115,14 +115,12 @@
                     </div>
                 </div>
                 <div class="item">
-                    <!--          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">-->
                     <div class="container">
                         <div class="carousel-caption">
                          
                                           <h1>Less, but better.</h1>
                                           <p>You save energy, aid the planet and save your wallet.</p>
                             
-<!--                                          <p><a class="btn btn-lg btn-info" href="#" role="button">Browse gallery</a></p>-->
                         </div>
                     </div>
                 </div>
@@ -399,11 +397,19 @@
             </footer>
 
         </div><!-- /.container -->
-        <aside id="sidebar">
+<!--        <aside id="sidebar">
             <nav>
                 <a href="#">POR</a>
             </nav>
-        </aside>
+        </aside>-->
+        <select id="sidebar">
+<!--                <option value="browser" selected>Default</option>-->
+                <option value="en">EN</option>
+                <option value="pt_PT">PT</option>
+                <option value="es_ES">ES</option>
+<!--                <option value="fr">fr</option>-->
+
+            </select>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -413,15 +419,14 @@
         <script src="js/savenergy.js"></script>
         <script src="js/jquery.i18n.properties.js"></script>
         <script src="js/scrollspy.js"></script>
-        <script src="assets/js/docs.min.js"></script>
         <script type="text/javascript">
             // load I18N bundles
             $(document).ready(function() {
                 loadBundles($.i18n.browserLang());
 
                 // configure language combo box
-                $('#lang').change(function() {
-                    var selection = $('#lang option:selected').val();
+                $('#sidebar').change(function() {
+                    var selection = $('#sidebar option:selected').val();
                     loadBundles(selection !== 'browser' ? selection : $.i18n.browserLang());
 
                 });
@@ -435,7 +440,7 @@
                     language: lang,
                     callback: function() {
                         //$("#msg_welcome").text($.i18n.prop('msg_welcome'));
-                        $("#msg_welcome").text(msg_welcome);
+                        $("#msg_welcome_1").text(msg_welcome_1);
                         $("#msg_selLang").text(msg_selLang(lang));
                     }
                 });
