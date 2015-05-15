@@ -56,45 +56,47 @@ $(document).ready(function () {
 // spy and scroll menu boogey
         $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, #works a, .navbar-header a").on('click', function (e) {
 // prevent default anchor click behavior
-            e.preventDefault()
+            e.preventDefault();
 // store hash
-            var hash = this.hash
+            var hash = this.hash;
 // animate
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 69
             }, 1000, function () {
-                window.location.hash = hash - 69
+                window.location.hash = hash - 69;
             })
 
         })
 
     }(jQuery);
-    
-    $(window).scroll(function() {
+    /* 
+     ANIMATION MENU
+     */
+    $(window).scroll(function () {
         //variavel semi-global
         var hScrollTop = $(this).scrollTop();
         var go = true;
         //Menu Fixo: barra cinza
-        if (hScrollTop > 10 && go ) {
+        if (hScrollTop > 10 && go) {
             $(".navbar-wrapper").stop().animate({
-                 "font-size":"1em", 
-                height: "70px"},"fast");
+                "font-size": "1em",
+                height: "70px"}, "fast");
             $(".navbar-header img").stop().animate({
                 width: "70px"}, "fast");
             $(".navbar-collapse").stop().animate({"margin-top": "10px"}, "fast");
             go = false;
         }
-        else if (hScrollTop < 10 && go )  {
+        else if (hScrollTop < 10 && go) {
             $(".navbar-wrapper").stop().animate({
-                "font-size":"1.25em", 
-                height: "90px"},"fast");
+                "font-size": "1.25em",
+                height: "90px"}, "fast");
             $(".navbar-header img").stop().animate({
                 width: "90px"}, "fast");
             $(".navbar-collapse").stop().animate({"margin-top": "20px"}, "fast");
 
-go = true;
+            go = true;
         }
-        });
+    });
 
 });
 
