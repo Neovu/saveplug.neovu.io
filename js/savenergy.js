@@ -36,12 +36,12 @@ $(document).ready(function () {
      ALTURA DO BANNER
      */
 
-//    var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
-//    $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/
-//    $(window).resize(function () {
-//        var altura_tela = $(window).height();
-//        $("#myCarousel, .carousel .item").height(altura_tela);
-//    });
+    var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
+    $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/
+    $(window).resize(function () {
+        var altura_tela = $(window).height();
+        $("#myCarousel, .carousel .item").height(altura_tela);
+    });
 
     /* 
      END ALTURA DO BANNER
