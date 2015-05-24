@@ -23,6 +23,9 @@
 .text-blue2{
     color: #00C6FF;
 }
+.text-blue3{
+    color:#008CB0;
+}
 .blue3{
     background: #4CD7FF;
 }
@@ -505,6 +508,15 @@ a.navbar-brand img {
     transition: all .2s ease-in-out .2s;
 }
 
+#benefits h2{
+    font-weight: 100;
+}
+
+#benefits > article > p{
+    font-size: 21px;
+    line-height: 1.4;
+}
+
 #benefits img{
     width: 190px;
 }
@@ -531,6 +543,13 @@ a.navbar-brand img {
 
 .featurette-divider {
     margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette a.lead:hover{
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 4px;
+    color: #008CB0;
+    text-decoration: none;
 }
 
 /* Thin out the marketing headings */
