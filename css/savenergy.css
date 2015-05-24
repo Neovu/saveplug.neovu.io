@@ -152,10 +152,11 @@ body {
     display: block;
 }
 
-/*#video-save{
-    height: 50%;
-    width: 50%;
-    float: center;}*/
+#video-save{
+
+    width: 100%;
+
+}
 .border-rounded{
     border-radius: 3px;
 }
@@ -361,13 +362,19 @@ a.navbar-brand img {
     margin-top: 15%;
 
     height: 680px; 
-    background-position: center 50%;
-    -webkit-background-size: 70%;
-    -moz-background-size: 70%;
-    background-size: 70%;
+    background-position: center;
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    background-size: 80%;
     background-repeat: no-repeat;
 
-    -o-background-size: 70%;
+    -o-background-size: 80%;
+}
+
+.fill .carousel-caption{
+    
+    margin-top: 150px;
+    
 }
 
 
