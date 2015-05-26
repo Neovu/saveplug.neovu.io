@@ -205,6 +205,14 @@ body {
     opacity: 1;
 }
 
+#saveflow a{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+#saveflow a:hover{
+   opacity: .8;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -510,10 +518,10 @@ a.navbar-brand img {
     text-align: center;
 }
 
-#benefits div{
+/*#benefits div{
     background: transparent;
     transition: all .2s ease-in-out .2s;
-}
+}*/
 
 #benefits h2{
     font-weight: 100;
@@ -528,7 +536,7 @@ a.navbar-brand img {
     width: 190px;
 }
 
-#benefits article div:hover{
+/*#benefits article div:hover{
     background: #CBBE2D;
     border-radius: 5px;
     color: #fff;
@@ -542,7 +550,7 @@ a.navbar-brand img {
 #benefits article div:last-child:hover{
     background: #F58144;
     border-radius: 5px;
-}
+}*/
 
 
 /* Featurettes
@@ -625,13 +633,20 @@ a.navbar-brand img {
     background-size: cover;
     background-position: left top;
     background-attachment: fixed;
+    font-weight: 100;
 }
 
 .value2{
-    background-image: url("../img/bg-benefits2.jpg");
+    background-image: url("../img/bg-benefits3.jpg");
     background-size: cover;
-    background-position: left top;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     height: 400px;
+    font-weight: 100;
+}
+
+.value2 h2{
+    font-weight: 100;
 }
 
 #works a > i {
