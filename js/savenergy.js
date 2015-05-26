@@ -32,6 +32,17 @@ $(document).ready(function () {
      END VIEWS DEVICE
      */
 
+$(".open-saveflow").click(function () {
+        $('#saveflow').addClass('visible').removeClass('hidden');
+        return false;
+    });
+    
+    $(".close-saveflow").click(function () {
+        $('#saveflow').addClass('hidden').removeClass('visible');
+        return false;
+    });
+
+
     /* 
      ALTURA DO BANNER
      */
@@ -54,7 +65,7 @@ $(document).ready(function () {
     +function ($) {
         'use strict';
 // spy and scroll menu boogey
-        $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, #works a, .navbar-header a").on('click', function (e) {
+        $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, #works a, .navbar-header a, .open-saveflow, #saveflow a").on('click', function (e) {
 // prevent default anchor click behavior
             e.preventDefault();
 // store hash
