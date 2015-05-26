@@ -65,7 +65,7 @@ $(".open-saveflow").click(function () {
     +function ($) {
         'use strict';
 // spy and scroll menu boogey
-        $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, #works a, .navbar-header a, .open-saveflow, #saveflow a").on('click', function (e) {
+        $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, .value2 a, .navbar-header a, .open-saveflow, #saveflow a").on('click', function (e) {
 // prevent default anchor click behavior
             e.preventDefault();
 // store hash

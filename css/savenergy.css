@@ -152,11 +152,31 @@ body {
     display: block;
 }
 
-#video-save{
+video { display: block; }
 
-    width: 100%;
 
+#video-save {
+  width: 100%;
+  position: relative;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+  /* width: auto; */
+  /* height: auto; */
+  z-index: 10;
+  /* -webkit-transform: translateX(-50%) translateY(-50%); */
+  /* transform: translateX(-50%) translateY(-50%); */
+  background: url(../img/poster-video-savenergy.jpg) no-repeat;
+  background-size: cover;
+  padding: 0 0;
 }
+
+/*.video-caption{
+    position: absolute;
+    left:50%;
+    margin-left: -20%;
+}*/
 .border-rounded{
     border-radius: 3px;
 }
@@ -649,14 +669,14 @@ a.navbar-brand img {
     font-weight: 100;
 }
 
-#works a > i {
+.value2 a > i {
     font-size: 50px;
     font-weight: 100;
     color: #fff;
     margin-top: 40px;
 }
 
-#works a  {
+.value2 a  {
     text-decoration: none;
 }
 
