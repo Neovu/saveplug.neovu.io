@@ -669,14 +669,14 @@ a.navbar-brand img {
     font-weight: 100;
 }
 
-#works a > i {
+.value2 a > i {
     font-size: 50px;
     font-weight: 100;
     color: #fff;
     margin-top: 40px;
 }
 
-#works a  {
+.value2 a  {
     text-decoration: none;
 }
 
