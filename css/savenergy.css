@@ -50,7 +50,8 @@
 body {
     padding-bottom: 40px;
     color: #5a5a5a;
-    font-weight: 200;
+    font-weight: 100;
+    font-family: 'SourceSansPro-Light', 'Helvetica', 'Arial';
 
 }
 .margin-top-10{
@@ -156,20 +157,20 @@ video { display: block; }
 
 
 #video-save {
-  width: 100%;
-  position: relative;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* min-width: 100%; */
-  /* min-height: 100%; */
-  /* width: auto; */
-  /* height: auto; */
-  z-index: 10;
-  /* -webkit-transform: translateX(-50%) translateY(-50%); */
-  /* transform: translateX(-50%) translateY(-50%); */
-  background: url(../img/poster-video-savenergy.jpg) no-repeat;
-  background-size: cover;
-  padding: 0 0;
+    width: 100%;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    /* width: auto; */
+    /* height: auto; */
+    z-index: 10;
+    /* -webkit-transform: translateX(-50%) translateY(-50%); */
+    /* transform: translateX(-50%) translateY(-50%); */
+    background: url(../img/poster-video-savenergy.svg) no-repeat;
+    background-size: cover;
+    padding: 0 0;
 }
 
 /*.video-caption{
@@ -230,7 +231,7 @@ video { display: block; }
     text-decoration: none;
 }
 #saveflow a:hover{
-   opacity: .8;
+    opacity: .8;
 }
 
 
@@ -400,9 +401,9 @@ a.navbar-brand img {
 }
 
 .fill .carousel-caption{
-    
+
     margin-top: 150px;
-    
+
 }
 
 
@@ -655,11 +656,15 @@ a.navbar-brand img {
     background-attachment: fixed;
     font-weight: 100;
 }
+.value h2{
+    font-weight: 100;
+    padding-right: 20px;
+}
 
 .value2{
     background-image: url("../img/bg-benefits3.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     height: 400px;
     font-weight: 100;
@@ -672,12 +677,16 @@ a.navbar-brand img {
 .value2 a > i {
     font-size: 50px;
     font-weight: 100;
-    color: #fff;
+    color: #333;
     margin-top: 40px;
 }
 
 .value2 a  {
     text-decoration: none;
+    background-color: #fff;
+    padding: 35px 15px 10px;
+    border-radius: 50%;
+    line-height: 1;
 }
 
 .panel {
@@ -800,7 +809,10 @@ a.navbar-brand img {
 
 @font-face {
     font-family: 'SourceSansPro-Bold';
-    src:  url('../font/SourceSansPro-Bold.ttf') format('opentype');
+    src:  url('../font/HelveticaNeueLTStd-Bd_gdi.eot');
+    src: url('../font/HelveticaNeueLTStd-Bd_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../font/HelveticaNeueLTStd-Bd_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-Bd_gdi.ttf') format('truetype');
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -809,7 +821,10 @@ a.navbar-brand img {
 
 @font-face {
     font-family: 'SourceSansPro-Regular';
-    src:  url('../font/SourceSansPro-Regular.ttf') format('opentype');
+    src:  url('../font/HelveticaNeueLTStd-Roman_gdi.ttf') format('truetype'),
+        url('../font/HelveticaNeueLTStd-Roman_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-Roman_gdi.eot?#iefix') format('embedded-opentype');
+    src:  url('../font/HelveticaNeueLTStd-Roman_gdi.eot');
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -817,8 +832,45 @@ a.navbar-brand img {
 
 @font-face {
     font-family: 'SourceSansPro-Light';
-    src:  url('../font/SourceSansPro-Light.ttf') format('opentype');
+    src:  url('../font/HelveticaNeueLTStd-Lt_gdi.eot');
+    src:  url('../font/HelveticaNeueLTStd-Lt_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../font/HelveticaNeueLTStd-Lt_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-Lt_gdi.ttf') format('truetype');
+    font-variant: normal;
+    font-weight: 100;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'SourceSansPro-Thin';
+    src:  url('../font/HelveticaNeueLTStd-Th_gdi.ttf') format('truetype'),
+        url('../font/default/HelveticaNeueLTStd-Th.otf') format('opentype'),
+        url('../font/HelveticaNeueLTStd-Th_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-Th_gdi.eot?#iefix') format('embedded-opentype');
+    src:  url('../font/HelveticaNeueLTStd-Th_gdi.eot');
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
-}    
+}  
+
+@font-face {
+    font-family: 'SourceSansPro-Medium';
+    src:  url('../font/HelveticaNeueLTStd-Md_gdi.ttf') format('truetype'),
+        url('../font/HelveticaNeueLTStd-Md_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-Md_gdi.eot?#iefix') format('embedded-opentype');
+    src:  url('../font/HelveticaNeueLTStd-Md_gdi.eot');
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'SourceSansPro-Ulight';
+    src:  url('../font/HelveticaNeueLTStd-UltLt_gdi.ttf') format('truetype'),
+        url('../font/HelveticaNeueLTStd-UltLt_gdi.woff') format('woff'),
+        url('../font/HelveticaNeueLTStd-UltLt_gdi.eot?#iefix') format('embedded-opentype');
+    src:  url('../font/HelveticaNeueLTStd-UltLt_gdi.eot');
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+}  

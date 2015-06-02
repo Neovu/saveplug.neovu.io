@@ -49,7 +49,7 @@
                                 <li><a href="#products" class="msg_products_nav">Products</a></li>
                                 <li><a href="#plans" class="msg_plans_nav">Plans</a></li>
                                 <li><a href="#contact" class="msg_find_nav">Find us</a></li>
-                                <li><a href="saveplug.html" class="msg_store_nav">Store</a></li>
+                                <li><a href="store.html" class="msg_store_nav" onClick="ga('send', 'event', { eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});">Store</a></li>
                                 <!--                                <li class="dropdown">
                                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="msg_buy_nav">Buy</span> <b class="caret"></b></a>
                                                                     <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
                                                                         
                                                                     </ul>
                                                                 </li>-->
-                                <li class="active"><a href="http://www.savenergies.com">Login</a></li>
+                                <li class="active"><a href="http://www.savenergies.com" onClick="ga('send', 'event', { eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
         <section class="bg-primary value2">
             <div class="container">
                 <div class="row">
-                    <div class="text-left">
+                    <div class="text-left padding-left-20">
                         <h2 class="section-heading padding-top-70">A new way to take care of your home.</h2>
                         <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>
                     </div>
@@ -182,22 +182,19 @@
         ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
         <section class="text-center" id="works">
-            <video id="video-save"  loop poster="img/poster-video-savenergy.jpg" class="" controls>
+            <video id="video-save"  loop poster="img/poster-video-savenergy.svg" class="" controls>
                 <source src="video/savenergy.mp4" type="video/mp4">
                 <source src="video/savenergy.ogv" type="video/ogv">
                 Your browser does not support the video tag.
             </video>
-
-<!--            <div class="container video-caption">
-                <h2 class="featurette-heading">How Savenergy works!</h2>
-
-                <p class="padding-bottom-50">Start with Savenergy. It has the magic that you need to save up energy, water and gas!</p>
-
-
-                <iframe  height="300" class="col-md-8 col-md-offset-2" src="https://www.youtube.com/embed/lvZfU_x_NGc?controls=0&showinfo=0&vq=hd1080&modestbranding=1&fs=0" frameborder="0" allowfullscreen align="center" id="video-save"></iframe>
-
-            </div>
-            <div class="container"><a href="#about" class="margin-top-50"><i class="fa fa-angle-down"></i></a></div>-->
+<!-- Video Controls -->
+<!--  <div id="video-controls">
+    <button type="button" id="play-pause">Play</button>
+    <input type="range" id="seek-bar" value="0">
+    <button type="button" id="mute">Mute</button>
+    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+    <button type="button" id="full-screen">Full-Screen</button>
+  </div>-->
 
         </section>
 
@@ -209,13 +206,14 @@
                     <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading"><span class="msg_title_features_1">Connect the saveplug.</span> <br><span class="text-muted msg_subtitle_features_1">Wow! Your home is smart.</span></h2>
                         <p class="lead">You can make your smart household objects through a small and elegant device that is ready to use, just plug in the socket and connect on wi-fi. The Saveplug controls and monitors the appliance's energy consumption connected to it.</p>
-                        <p><a class="btn btn-xl btn-default" href="saveplug.html" role="button">Details</a></p>
+                        <p><a class="btn btn-xl btn-default" href="saveplug.html" role="button"><i class="fa fa-shopping-cart"> </i> BUY NOW!</a></p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 text-center">
                         <img class="featurette-image img-responsive 1" src="img/saveplug-top2-2.png" alt="Saveplug: connect any diveices and zaz it's smart">
                         <img class="featurette-image img-responsive hidden 2" src="img/saveplug-top2-3.png" alt="Saveplug: connect any diveices and zaz it's smart">
                         <img class="featurette-image img-responsive hidden 3" src="img/saveplug-top2-1.png" alt="Saveplug: connect any diveices and zaz it's smart">
-                        <br><br><br>
+                        <br><br>
+                        <p style="color:#fff;">90&deg; view</p>
                         <ol class="carousel-indicators carousel-indicators-mini">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -224,29 +222,30 @@
                     </div>
                 </div>
             </div>
-
-
-
             <div class="blue2 padding-top-70 padding-bottom-50">
                 <div class="container featurette">
                     <div class="col-md-5">
-                        <img class="img-responsive" src="img/saveapp.svg" alt="Saveapp from savenergy">
+                        <img class="img-responsive img-standard" src="img/saveapp2.png" alt="Saveapp from savenergy">
+                        <img class="img-responsive img-follow hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
+                        <img class="img-responsive img-notification hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
+                        <img class="img-responsive img-manage hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
+                        
                     </div>
                     <div class="col-md-7 text-right padding-top-50 padding-bottom-30">
-                        <h2 class="featurette-heading padding-bottom-50"><span class="msg_title_features_2">An amazing usefull app.</span> <br><span class="text-muted msg_subtitle_features_2">Your friend everywhere.</span></h2>
-                        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+                        <h2 class="featurette-heading"><span class="msg_title_features_2">An amazing usefull app.</span> <br><span class="text-muted msg_subtitle_features_2">Your friend everywhere.</span></h2>
+                        <p class="lead padding-bottom-50" style="opacity: .5;"><i class="fa fa-hand-o-down"> </i> Touch the icons below</p>
                         <div class="col-md-10 pull-right  padding-right-0">
-                            <a href="#" class="lead col-md-4 text-center text-blue3">
+                            <a href="#" class="lead col-md-4 text-center text-blue3 follow">
 
-                                <h3> <i class="fa fa-clock-o font-40 "></i></h3>
+                                <h3> <i class="fa fa-clock-o font-40"></i></h3>
                                 <h4 class="font-w-200 ">Follow the home energy consumption</h4>
                             </a>
-                            <a href="#" class="lead col-md-4 text-center text-blue3">
+                            <a href="#" class="lead col-md-4 text-center text-blue3 notification">
 
                                 <h3> <i class="fa fa-bell font-40 text-center"></i></h3>
                                 <h4 class="font-w-200">Receive notifications of your appliances</h4>
                             </a>
-                            <a href="#" class="lead col-md-4 text-center text-blue3">
+                            <a href="#" class="lead col-md-4 text-center text-blue3 manage">
 
                                 <h3> <i class="fa fa-area-chart font-40 text-center "></i></h3>
                                 <h4 class="font-w-200">Manage and save energy, water and gas</h4>
@@ -282,7 +281,6 @@
 
                 </div>
 
-            </div>
         </div>
         <div id="plans" class="blue padding-top-70 padding-bottom-50">
             <div class="container featurette">
@@ -462,8 +460,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/savenergy.js"></script>
     <script src="js/jquery.i18n.properties.js"></script>
-    <script src="js/scrollspy.js"></script>
     <script src="js/translate-savenergy.js"></script>
+    <script src="js/scrollspy.js"></script>
+   
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40632331-3', 'auto');
+  ga('send', 'pageview');
+  
+  
+</script>
 
 
 </body>
