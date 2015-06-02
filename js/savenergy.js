@@ -31,6 +31,36 @@ $(document).ready(function () {
     }); /* 
      END VIEWS DEVICE
      */
+        
+$(".follow").mouseover(function() {
+    $(".img-follow").addClass("visible").removeClass("hidden");
+    $(".img-standard").addClass("hidden").removeClass("visible");
+    
+});      
+$(".follow").mouseout(function() {
+    $(".img-follow").addClass("hidden").removeClass("visible");
+    $(".img-standard").addClass("visible").removeClass("hidden");
+}); 
+
+$(".notification").mouseover(function() {
+    $(".img-notification").addClass("visible").removeClass("hidden");
+    $(".img-standard").addClass("hidden").removeClass("visible");
+    
+});      
+$(".notification").mouseout(function() {
+    $(".img-notification").addClass("hidden").removeClass("visible");
+    $(".img-standard").addClass("visible").removeClass("hidden");
+}); 
+
+$(".manage").mouseover(function() {
+    $(".img-manage").addClass("visible").removeClass("hidden");
+    $(".img-standard").addClass("hidden").removeClass("visible");
+    
+});      
+$(".manage").mouseout(function() {
+    $(".img-manage").addClass("hidden").removeClass("visible");
+    $(".img-standard").addClass("visible").removeClass("hidden");
+});
 
 $(".open-saveflow").click(function () {
         $('#saveflow').addClass('visible').removeClass('hidden');
@@ -47,12 +77,12 @@ $(".open-saveflow").click(function () {
      ALTURA DO BANNER
      */
 
-//    var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
-//    $("#myCarousel, .carousel .item").height(altura_tela); /* aplica a variável a altura da div*/
-//    $(window).resize(function () {
-//        var altura_tela = $(window).height();
-//        $("#myCarousel, .carousel .item").height(altura_tela);
-//    });
+    var altura_tela = $(window).height();/*cria variável com valor do altura da janela*/
+    $("#video-save").height(altura_tela); /* aplica a variável a altura da div*/
+    $(window).resize(function () {
+        var altura_tela = $(window).height();
+        $("#video-save").height(altura_tela);
+    });
 
     /* 
      END ALTURA DO BANNER

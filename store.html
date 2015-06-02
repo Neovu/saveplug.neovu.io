@@ -11,7 +11,7 @@
         <title>Savenergy || SmartThings</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap-custom.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -47,7 +47,7 @@
                             <ul class="nav navbar-nav">
 
                                 <li><a href="index.html" class="last-child-50 close">X</a></li>
-<!--                                <li class="active"><a href="http://www.savenergies.com">Login</a></li>-->
+                                <!--                                <li class="active"><a href="http://www.savenergies.com">Login</a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                     <p>Available on all planes.</p>
                                 </div>
                                 <div class="padding-top-20">                  
-                                    <button type="submit" class="btn btn-xl btn-success">Buy with Paypal</button>
+                                    <button id="buySaveplug" type="submit" class="btn btn-xl btn-success" onClick="ga('send', 'event', { eventCategory: 'Buy', eventAction: 'Buy-Savelug', eventLabel: 'Clicked'});">Buy with Paypal</button>
                                 </div>
                             </form><!-- END FORM-->
                         </div>
@@ -118,35 +118,35 @@
                     <div class="col-md-2 text-center">
                         <div>Connection</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-wifi.svg" class="img-responsive"/>
+                            <img src="img/espec-wifi.svg" class=""/>
                             <p>Wi-fi</p>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
                         <div>Voltage</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-tension.svg" class="img-responsive"/>
+                            <img src="img/espec-tension.svg" class=""/>
                             <p>110 / 240 volts</p>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
                         <div>Thermoplastic</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-plastic.svg" class="img-responsive"/>
+                            <img src="img/espec-plastic.svg" class=""/>
                             <p>Polyethylene</p>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
                         <div>Certification</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-inmetro.svg" class="img-responsive"/>
+                            <img src="img/espec-inmetro.svg" class=""/>
                             <p>Yes</p>
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
                         <div>Color</div>
                         <div class="gray3 border-rounded ">
-                            <img src="img/espec-color.svg" class="img-responsive"/>
+                            <img src="img/espec-color.svg" class=""/>
                             <p>White and Black</p>
                         </div>
                     </div>
@@ -233,6 +233,28 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="assets/js/docs.min.js"></script>
         <script src="js/savenergy.js"></script>
+        <script src="js/jquery.i18n.properties.js"></script>
+        <script src="js/translate-savenergy.js"></script>
+        <script src="js/scrollspy.js"></script>
+
+        <!-- ANALYTICS
+        ================================================== -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-40632331-3', 'auto');
+            ga('send', 'pageview');
+        </script>
 
     </body>
 </html>
