@@ -287,10 +287,16 @@ video { display: block; }
 .navbar-inverse .navbar-brand {
     margin-top:10px;
     margin-left: 10px;
+    padding: 3px 15px;
 }
 
-a.navbar-brand img {
+/*a.navbar-brand img {
     width: 100%;
+}*/
+
+.navbar-header img{
+    width: 90px;
+    
 }
 
 .navbar-inverse .navbar-collapse{
