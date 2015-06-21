@@ -8,7 +8,7 @@
         <meta name="author" content="Neovu Design e Tecnologia">
         <link rel="shortcut icon" href="img/favicon.ico">
 
-        <title>Savenergy || SmartThings</title>
+        <title>Neovu || SmartThings</title>
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -82,7 +82,7 @@
                                     <p>Available on all planes.</p>
                                 </div>
                                 <div class="padding-top-20">                  
-                                    <button id="buySaveplug" type="submit" class="btn btn-xl btn-success" onClick="ga('send', 'event', { eventCategory: 'Buy', eventAction: 'Buy-Savelug', eventLabel: 'Clicked'});">Buy with Paypal</button>
+                                    <button id="buySaveplug" type="submit" class="btn btn-xl btn-success" onClick="ga('send', 'event', {eventCategory: 'Buy', eventAction: 'Buy-Savelug', eventLabel: 'Clicked'});">Buy with Paypal</button>
                                 </div>
                             </form><!-- END FORM-->
                         </div>
@@ -200,7 +200,7 @@
                 <div class="container margin-top-20">
                     <div class="row">
                         <div class="col-md-5">
-                            <span class="copyright">Savenergy 2015. &copy;<a href="https://www.neovu.com.br"><img src="http://savenergies.com/templates/gantry/images/logo/powered.png" width="70"/></a></span>
+                            <span class="copyright">Neovu 2015. &copy;<a href="https://www.neovu.com.br"><img src="http://savenergies.com/templates/gantry/images/logo/powered.png" width="70"/></a></span>
                         </div>
                         <div class="col-md-4">
                             <ul class="list-inline quicklinks">
@@ -217,11 +217,10 @@
         </div><!-- /.container -->
         <div class="form-group">
             <select id="sidebar" class="form-control">
-                <!--                <option value="browser" selected>Default</option>-->
-                <option value="en">EN</option>
-                <option value="pt_PT">PT</option>
+
+                <option value="pt_PT" selected="">PT</option>
+                <option value="en" >EN</option> 
                 <option value="es_ES">ES</option>
-                <!--                <option value="fr">fr</option>-->
 
             </select  >
         </div>
@@ -240,20 +239,20 @@
         <!-- ANALYTICS
         ================================================== -->
         <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                                        (function (i, s, o, g, r, a, m) {
+                                            i['GoogleAnalyticsObject'] = r;
+                                            i[r] = i[r] || function () {
+                                                (i[r].q = i[r].q || []).push(arguments)
+                                            }, i[r].l = 1 * new Date();
+                                            a = s.createElement(o),
+                                                    m = s.getElementsByTagName(o)[0];
+                                            a.async = 1;
+                                            a.src = g;
+                                            m.parentNode.insertBefore(a, m)
+                                        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-40632331-3', 'auto');
-            ga('send', 'pageview');
+                                        ga('create', 'UA-40632331-3', 'auto');
+                                        ga('send', 'pageview');
         </script>
 
     </body>
