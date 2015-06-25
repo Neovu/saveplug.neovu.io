@@ -28,8 +28,12 @@ function loadBundles(lang) {
             $(".msg_content_col_benefits_2").text(msg_content_col_benefits_2);
             $(".msg_content_col_benefits_3").text(msg_content_col_benefits_3);
             $(".msg_title_features_1").text(msg_title_features_1);
+            $(".msg_text_features_1").text(msg_text_features_1);
             $(".msg_subtitle_features_1").text(msg_subtitle_features_1);
             $(".msg_title_features_2").text(msg_title_features_2);
+            $(".msg_text_1_features_2").text(msg_text_1_features_2);
+            $(".msg_text_2_features_2").text(msg_text_2_features_2);
+            $(".msg_text_3_features_2").text(msg_text_3_features_2);
             $(".msg_subtitle_features_2").text(msg_subtitle_features_2);
             $(".msg_title_features_3").text(msg_title_features_3);
             $(".msg_subtitle_features_3").text(msg_subtitle_features_3);
@@ -38,14 +42,23 @@ function loadBundles(lang) {
             $(".msg_title_plan_free").text(msg_title_plan_free);
             $(".msg_title_plan_home").text(msg_title_plan_home);
             $(".msg_title_plan_super").text(msg_title_plan_super);
+            $(".msg_text_help").text(msg_text_help);
+            $(".msg_text_follow").text(msg_text_follow);
+            $(".msg_text_call_us").text(msg_text_call_us);
+            $(".msg_title_call_us").text(msg_tittle_call_u);
+            $(".msg_shopping_card").text(msg_shopping_card);
+            
+            
+            
 
         }
     });
 }
 $(document).ready(function () {
-    
-    loadBundles($.i18n.browserLang());
-     
+
+    //loadBundles($.i18n.browserLang());
+    loadBundles("pt_PT");
+
     $(".featurette ol li:nth-child(1)").click(function () {
         $('.featurette-image.1').addClass('visible').removeClass('hidden');
         $('.featurette-image.2, .featurette-image.3').addClass('hidden');
@@ -66,9 +79,7 @@ $(document).ready(function () {
         $('.featurette ol li:nth-child(3)').addClass('active');
         $('.featurette ol li:nth-child(1), .featurette ol li:nth-child(2)').removeClass('active');
         return false;
-    }); /* 
-     END VIEWS DEVICE
-     */
+    });  
 
     $(".follow").mouseover(function () {
         $(".img-follow").addClass("visible").removeClass("hidden");
@@ -200,7 +211,7 @@ $(document).ready(function () {
             go = true;
         }
     });
- 
+
     // configure language combo box
     $('#sidebar').change(function () {
         var selection = $('#sidebar option:selected').val();
