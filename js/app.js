@@ -14,11 +14,14 @@ function loadBundles(lang) {
             $(".msg_subtitle_banner_3").text(msg_subtitle_banner_3);
             $(".msg_btn_banner_1").text(msg_btn_banner_1);
             $(".msg_btn_banner_2").text(msg_btn_banner_2);
-            $(".msg_overview_nav").text(msg_overview);
-            $(".msg_products_nav").text(msg_products);
-            $(".msg_plans_nav").text(msg_plans);
-            $(".msg_find_nav").text(msg_find);
-            $(".msg_buy_nav").text(msg_buy);
+            $(".msg_overview_nav").text(msg_overview_nav);
+            $(".msg_products_nav").text(msg_products_nav);
+            $(".msg_plans_nav").text(msg_plans_nav);
+            $(".msg_contact_nav").text(msg_contact_nav);
+            $(".msg_store_nav").text(msg_store_nav);
+            $(".msg_login_nav").text(msg_login_nav);
+            $(".msg_heading_call_us").text(msg_heading_call_us);
+            $(".msg_heading_video").text(msg_heading_video);  
             $(".msg_title_benefits").text(msg_title_benefits);
             $(".msg_subtitle_benefits").text(msg_subtitle_benefits);
             $(".msg_title_col_benefits_1").text(msg_title_col_benefits_1);
@@ -45,11 +48,15 @@ function loadBundles(lang) {
             $(".msg_text_help").text(msg_text_help);
             $(".msg_text_follow").text(msg_text_follow);
             $(".msg_text_call_us").text(msg_text_call_us);
-            $(".msg_title_call_us").text(msg_tittle_call_u);
+            $(".msg_title_call_us").text(msg_tittle_call_us);
             $(".msg_shopping_card").text(msg_shopping_card);
-            
-            
-            
+
+            $(".msg_store_title").text(msg_store_title);
+            $(".msg_store_subtitle").text(msg_store_subtitle);
+            $(".msg_store_text").text(msg_store_text);
+            $(".msg_store_button_buy").text(msg_store_button_buy);
+            $(".msg_privacy").text(msg_privacy);
+            $(".msg_terms").text(msg_terms);
 
         }
     });
@@ -79,7 +86,7 @@ $(document).ready(function () {
         $('.featurette ol li:nth-child(3)').addClass('active');
         $('.featurette ol li:nth-child(1), .featurette ol li:nth-child(2)').removeClass('active');
         return false;
-    });  
+    });
 
     $(".follow").mouseover(function () {
         $(".img-follow").addClass("visible").removeClass("hidden");
@@ -218,6 +225,7 @@ $(document).ready(function () {
         loadBundles(selection !== 'browser' ? selection : $.i18n.browserLang());
 
     });
+
 });
 
 
