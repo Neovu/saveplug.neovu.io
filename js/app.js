@@ -5,62 +5,19 @@ function loadBundles(lang) {
         mode: 'both',
         language: lang,
         callback: function () {
-            //$("#msg_welcome").text($.i18n.prop('msg_welcome'));
-            $(".msg_title_banner_1").text(msg_title_banner_1);
-            $(".msg_subtitle_banner_1").text(msg_subtitle_banner_1);
-            $(".msg_title_banner_2").text(msg_title_banner_2);
-            $(".msg_subtitle_banner_2").text(msg_subtitle_banner_2);
-            $(".msg_title_banner_3").text(msg_title_banner_3);
-            $(".msg_subtitle_banner_3").text(msg_subtitle_banner_3);
-            $(".msg_btn_banner_1").text(msg_btn_banner_1);
-            $(".msg_btn_banner_2").text(msg_btn_banner_2);
-            $(".msg_overview_nav").text(msg_overview_nav);
-            $(".msg_products_nav").text(msg_products_nav);
-            $(".msg_plans_nav").text(msg_plans_nav);
-            $(".msg_contact_nav").text(msg_contact_nav);
-            $(".msg_store_nav").text(msg_store_nav);
-            $(".msg_login_nav").text(msg_login_nav);
-            $(".msg_heading_call_us").text(msg_heading_call_us);
-            $(".msg_heading_video").text(msg_heading_video);  
-            $(".msg_title_benefits").text(msg_title_benefits);
-            $(".msg_subtitle_benefits").text(msg_subtitle_benefits);
-            $(".msg_title_col_benefits_1").text(msg_title_col_benefits_1);
-            $(".msg_title_col_benefits_2").text(msg_title_col_benefits_2);
-            $(".msg_title_col_benefits_3").text(msg_title_col_benefits_3);
-            $(".msg_content_col_benefits_1").text(msg_content_col_benefits_1);
-            $(".msg_content_col_benefits_2").text(msg_content_col_benefits_2);
-            $(".msg_content_col_benefits_3").text(msg_content_col_benefits_3);
-            $(".msg_title_features_1").text(msg_title_features_1);
-            $(".msg_text_features_1").text(msg_text_features_1);
-            $(".msg_subtitle_features_1").text(msg_subtitle_features_1);
-            $(".msg_title_features_2").text(msg_title_features_2);
-            $(".msg_text_1_features_2").text(msg_text_1_features_2);
-            $(".msg_text_2_features_2").text(msg_text_2_features_2);
-            $(".msg_text_3_features_2").text(msg_text_3_features_2);
-            $(".msg_subtitle_features_2").text(msg_subtitle_features_2);
-            $(".msg_title_features_3").text(msg_title_features_3);
-            $(".msg_subtitle_features_3").text(msg_subtitle_features_3);
-            $(".msg_title_plan").text(msg_title_plan);
-            $(".msg_subtitle_plan").text(msg_subtitle_plan);
-            $(".msg_title_plan_free").text(msg_title_plan_free);
-            $(".msg_title_plan_home").text(msg_title_plan_home);
-            $(".msg_title_plan_super").text(msg_title_plan_super);
-            $(".msg_text_help").text(msg_text_help);
-            $(".msg_text_follow").text(msg_text_follow);
-            $(".msg_text_call_us").text(msg_text_call_us);
-            $(".msg_title_call_us").text(msg_tittle_call_us);
-            $(".msg_shopping_card").text(msg_shopping_card);
+            $.get("bundle/Messages.properties", function (data) {
+                var items = data.split('\n');
+                $(items).each(function (index, element) {
+                    var ele = element.split('=');
+                    $("." + ele[0]).text(ele[1]);
 
-            $(".msg_store_title").text(msg_store_title);
-            $(".msg_store_subtitle").text(msg_store_subtitle);
-            $(".msg_store_text").text(msg_store_text);
-            $(".msg_store_button_buy").text(msg_store_button_buy);
-            $(".msg_privacy").text(msg_privacy);
-            $(".msg_terms").text(msg_terms);
-
+                });
+            });
         }
     });
 }
+
+
 $(document).ready(function () {
 
     //loadBundles($.i18n.browserLang());
@@ -226,7 +183,20 @@ $(document).ready(function () {
 
     });
 
+
 });
 
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-
+ga('create', 'UA-40632331-3', 'auto');
+ga('send', 'pageview');
