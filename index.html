@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Neovu Design e Tecnologia">
         <link rel="shortcut icon" href="img/favicon.ico">
 
-        <title>Savenergy || SmartThings</title>
-
+        <title>Neovu®</title>
+        <link href="bower_components/pace/themes/white/pace-theme-minimal.css" rel="stylesheet" type="text/css"/>
+        <script src="bower_components/pace/pace.min.js" type="text/javascript"></script>
         <!-- Bootstrap core CSS -->
         <!--        <link href="css/bootstrap.css" rel="stylesheet">-->
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -25,11 +26,11 @@
         <!-- Custom styles for this template -->
         <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-custom.css" rel="stylesheet" type="text/css"/>
-        <link href="css/savenergy.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
     </head>
-    <!-- NAVBAR
-    ================================================== -->
+
     <body data-spy="scroll" data-target=".navbar-nav" data-offset="89">
+
         <div class="navbar-wrapper" id="saveNav">
             <div class="container">
 
@@ -46,21 +47,13 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li ><a href="#benefits" class="msg_overview_nav">Overview</a></li>
-                                <li><a href="#products" class="msg_products_nav">Products</a></li>
-                                <li><a href="#plans" class="msg_plans_nav">Plans</a></li>
-                                <li><a href="#contact" class="msg_find_nav">Find us</a></li>
-                                <li><a href="store.html" class="msg_store_nav" onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});">Store</a></li>
-                                <!--                                <li class="dropdown">
-                                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="msg_buy_nav">Buy</span> <b class="caret"></b></a>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a href="saveplug.html">SavePlug</a></li>
-                                                                        <li><a href="savebox.html">SaveBox</a></li>
-                                                                        <li><a href="savebox.html">SaveFlow</a></li>
-                                                                        
-                                                                    </ul>
-                                                                </li>-->
-                                <li class="active"><a href="http://www.savenergies.com" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
+                                <li ><a href="#benefits" class="msg_overview_nav"></a></li>
+                                <li><a href="#products" class="msg_products_nav"></a></li>
+                                <li><a href="#plans" class="msg_plans_nav"></a></li>
+                                <li><a href="#contact" class="msg_contact_nav"></a></li>
+                                <li><a href="store.html" class="msg_store_nav" onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"></a></li>
+
+                                <li class="active"><a href="http://www.savenergies.com" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,9 +62,6 @@
             </div>
         </div>
 
-
-        <!-- Carousel
-        ================================================== -->
         <section id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
             <!-- Indicators -->
@@ -90,9 +80,9 @@
                             <div class="carousel-caption">
 
 
-                                <h1 class="msg_title_banner_1">The newest SavePlug.</h1>
-                                <p class="msg_subtitle_banner_1">An easy way to save up energy and automate your home.</p>
-                                <p><a href="saveplug.html" class="btn btn-xl btn-default"><i class="fa fa-shopping-cart"> </i> <span class="msg_btn_banner_1">Buy now!</span></a></p>
+                                <h1 class="msg_title_banner_1"> </h1>
+                                <p class="msg_subtitle_banner_1"> </p>
+                                <p><a href="saveplug.html" class="btn btn-xl btn-default msg_shopping_card"><i class="fa fa-shopping-cart "> </i> <span class="msg_btn_banner_1">Buy now!</span></a></p>
 
                                 <!--                            <p><a class="btn btn-xl btn-default msg_btn_banner_1" href="saveplug.html" role="button">BUY NOW!</a></p>-->
                             </div>
@@ -106,10 +96,10 @@
                         <div class="fill-2 text-center" style= "background-image:url(../img/img-savapp-banner-3.jpg);">
                             <div class="carousel-caption">
 
-                                <h1 class="msg_title_banner_2">Know Savapp.</h1>
-                                <p class="msg_subtitle_banner_2">The inteligence behind Savenergy.</p>
+                                <h1 class="msg_title_banner_2"> </h1>
+                                <p class="msg_subtitle_banner_2"> </p>
 
-                                <p><a class="btn btn-xl btn-default" href="#" role="button"><i class="fa fa-android"></i> <span class="msg_btn_banner_2"> Go Google Play</span></a></p>
+                                <p><a class="btn btn-xl btn-default" href="#" role="button"><i class="fa fa-android"></i> <span class="msg_btn_banner_2">  </span></a></p>
                             </div>
                         </div>
 
@@ -119,8 +109,8 @@
                     <div class="container">
                         <div class="carousel-caption">
 
-                            <h1 class="msg_title_banner_3">Less, but better.</h1>
-                            <p class="msg_subtitle_banner_3">You save energy, aid the planet and save your wallet.</p>
+                            <h1 class="msg_title_banner_3"> </h1>
+                            <p class="msg_subtitle_banner_3"> </p>
 
                         </div>
                     </div>
@@ -134,54 +124,44 @@
                 <i class="fa fa-angle-right"></i>
 
             </a>
-        </section><!-- /.carousel -->
-
+        </section>  
         <section id="benefits" class="padding-bottom-70 padding-top-70 gray4 text-center">
             <article class="container">
-                <h2 class="msg_title_benefits featurette-heading">Three great benefits!</h2>
-                <p class="msg_subtitle_benefits padding-bottom-30">A new way to take care of your home.</p>
+                <h2 class="msg_title_benefits featurette-heading"> </h2>
+                <p class="msg_subtitle_benefits padding-bottom-30"> </p>
                 <div class="col-lg-4 padding-top-50 rose padding-bottom-30">
                     <img src="img/ic-benefits-people.svg" alt="Generic placeholder image">
-                    <h2 class="msg_title_col_benefits_1">Home automation for real humans</h2>
+                    <h2 class="msg_title_col_benefits_1"> </h2>
 
-                    <p class="msg_content_col_benefits_1">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p class="msg_content_col_benefits_1"> </p>
 
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4 padding-top-50 padding-bottom-30">
-                    <img class="" src="img/ic-benefits-comfort.svg" alt="benficios do conforto e seguranca de se usar o savenergy">
-                    <h2 class="msg_title_col_benefits_2">Comfort and safety in your hands</h2>
-                    <p class="msg_content_col_benefits_2">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <img class="" src="img/ic-benefits-comfort.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
+                    <h2 class="msg_title_col_benefits_2"> </h2>
+                    <p class="msg_content_col_benefits_2"> </p>
                 </div><!-- /.col-lg-4 -->
 
                 <div class="col-lg-4 padding-top-50 padding-bottom-30">
                     <img class="" src="img/ic-benefits-management.svg" alt="gestao facil do consumo energético da casa">
-                    <h2 class="msg_title_col_benefits_3">Save money on budget's home</h2>
+                    <h2 class="msg_title_col_benefits_3"> </h2>
                     <!--                    <h2>Really save energy in a fun way</h2>-->
-                    <p class="msg_content_col_benefits_3">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p class="msg_content_col_benefits_3"> </p>
                     <!--  <p><a class="btn btn-default" href="#" role="button">Veja mais &raquo;</a></p> -->
                 </div><!-- /.col-lg-4 -->
 
             </article>
-        </section>
-
-
-
+        </section> 
         <section class="bg-primary value2">
             <div class="container">
                 <div class="row">
                     <div class="text-left padding-left-20">
-                        <h2 class="section-heading padding-top-70">A new way to take care of your home.</h2>
+                        <h2 class="section-heading padding-top-70 msg_heading_video"> </h2>
                         <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+        </section>  
         <section class="text-center" id="works">
             <video id="video-save"  loop poster="img/poster-video-savenergy.svg" class="" controls>
                 <source src="video/savenergy.mp4" type="video/mp4">
@@ -197,17 +177,16 @@
                 <button type="button" id="full-screen">Full-Screen</button>
               </div>-->
 
-        </section>
-
+        </section> 
         <div class="marketing">
             <!-- START THE FEATURETTES -->
 
             <div class="blue3 padding-top-70 padding-bottom-50" id="products">
                 <div class="container featurette">
                     <div class="col-md-7 padding-top-50">
-                        <h2 class="featurette-heading"><span class="msg_title_features_1">Connect the saveplug.</span> <br><span class="text-muted msg_subtitle_features_1">Wow! Your home is smart.</span></h2>
-                        <p class="lead">You can make your smart household objects through a small and elegant device that is ready to use, just plug in the socket and connect on wi-fi. The Saveplug controls and monitors the appliance's energy consumption connected to it.</p>
-                        <p><a class="btn btn-xl btn-default" href="saveplug.html" role="button"><i class="fa fa-shopping-cart"> </i> BUY NOW!</a></p>
+                        <h2 class="featurette-heading"><span class="msg_title_features_1"> </span> <br><span class="text-muted msg_subtitle_features_1"> </span></h2>
+                        <p class="lead msg_text_features_1"> </p>
+                        <p><a class="btn btn-xl btn-default msg_shopping_card" href="saveplug.html" role="button"><i class="fa fa-shopping-cart "> </i>  </a></p>
                     </div>
                     <div class="col-md-5 text-center">
                         <img class="featurette-image img-responsive 1" src="img/saveplug-top2-2.png" alt="Saveplug: connect any diveices and zaz it's smart">
@@ -226,33 +205,33 @@
             <div class="blue2 padding-top-70 padding-bottom-50">
                 <div class="container featurette">
                     <div class="col-md-5">
-                        <img class="img-responsive img-standard" src="img/saveapp2.png" alt="Saveapp from savenergy">
-                        <img class="img-responsive img-follow hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
-                        <img class="img-responsive img-notification hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
-                        <img class="img-responsive img-manage hidden" src="img/saveapp2-1.png" alt="Saveapp from savenergy">
+                        <img class="img-responsive img-standard" src="img/saveapp2.png" alt="Saveapp from Neovu® Saveplug">
+                        <img class="img-responsive img-follow hidden" src="img/saveapp2-1.png" alt="Saveapp from Neovu® Saveplug">
+                        <img class="img-responsive img-notification hidden" src="img/saveapp2-1.png" alt="Saveapp from Neovu® Saveplug">
+                        <img class="img-responsive img-manage hidden" src="img/saveapp2-1.png" alt="Saveapp from Neovu® Saveplug">
 
                     </div>
                     <div class="col-md-7 text-right padding-top-50 padding-bottom-30">
-                        <h2 class="featurette-heading"><span class="msg_title_features_2">An amazing usefull app.</span> <br><span class="text-muted msg_subtitle_features_2">Your friend everywhere.</span></h2>
-                        <p class="lead padding-bottom-50" style="opacity: .5;"><i class="fa fa-hand-o-down"> </i> Touch the icons below</p>
+                        <h2 class="featurette-heading"><span class="msg_title_features_2"> </span> <br><span class="text-muted msg_subtitle_features_2"> </span></h2>
+                        <p class="lead padding-bottom-50" style="opacity: .5;"><i class="fa fa-hand-o-down"> </i> </p>
                         <div class="col-md-10 pull-right  padding-right-0">
                             <a href="#" class="lead col-md-4 text-center text-blue3 follow">
 
                                 <h3> <i class="fa fa-clock-o font-40"></i></h3>
-                                <h4 class="font-w-200 ">Follow the home energy consumption</h4>
+                                <h4 class="font-w-200 msg_text_1_features_2"> </h4>
                             </a>
                             <a href="#" class="lead col-md-4 text-center text-blue3 notification">
 
                                 <h3> <i class="fa fa-bell font-40 text-center"></i></h3>
-                                <h4 class="font-w-200">Receive notifications of your appliances</h4>
+                                <h4 class="font-w-200 msg_text_2_features_2"> </h4>
                             </a>
                             <a href="#" class="lead col-md-4 text-center text-blue3 manage">
 
                                 <h3> <i class="fa fa-area-chart font-40 text-center "></i></h3>
-                                <h4 class="font-w-200">Manage and save energy, water and gas</h4>
+                                <h4 class="font-w-200 msg_text_3_features_2"> </h4>
                             </a>
                         </div>
-                        <p><a class="btn btn-xl btn-default margin-top-50" href="#" role="button"><i class="fa fa-android"> </i> <span class="msg_btn_banner_2"> Go Google Play</span></a></p>
+                        <p><a class="btn btn-xl btn-default margin-top-50" href="#" role="button"><i class="fa fa-android"> </i> <span class="msg_btn_banner_2">  </span></a></p>
                     </div>
                 </div>
             </div>
@@ -260,9 +239,9 @@
             <div class="gray2 padding-top-70 padding-bottom-50" id="savebox">
                 <div class="container featurette">
                     <div class="col-md-7 padding-top-50">
-                        <h2 class="featurette-heading"><span class="msg_title_features_3">Savebox, coming soon.</span> <br><span class="text-muted msg_subtitle_features_3">And much more for you.</span></h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                        <p><a class="btn btn-xl btn-default open-saveflow " href="#saveflow" role="button"><i class="fa fa-plus"> </i> Products</a></p>
+                        <h2 class="featurette-heading"><span class="msg_title_features_3"> </span> <br><span class="text-muted msg_subtitle_features_3"> </span></h2>
+                        <p class="lead msg_text_1_features_3"> </p>
+                        <p><a class="btn btn-xl btn-default open-saveflow " href="#saveflow" role="button"><i class="fa fa-plus"> </i>  </a></p>
                     </div>
                     <div class="col-md-5">
                         <img class="img-responsive" src="img/savebox.svg" alt="Generic placeholder image">
@@ -272,8 +251,8 @@
             <div class="full gray padding-top-50 padding-bottom-50 hidden" id="saveflow">
                 <div class="container featurette">
                     <div class="col-md-12">
-                        <h2 class="featurette-heading space-left">SaveFlow <a href="#savebox" class="pull-right close-saveflow"><span>X</span></a></h2>
-                        <p class="lead">Connect the saveflow in any water pipe or gas and further reduce your household budget.</p>
+                        <h2 class="featurette-heading space-left">Saveflow <a href="#savebox" class="pull-right close-saveflow"><span>X</span></a></h2>
+                        <p class="lead msg_text_2_features_3"> </p>
                     </div>
 
                     <div class="col-md-6 padding-top-30">
@@ -285,66 +264,63 @@
             </div>
             <div id="plans" class="blue padding-top-70 padding-bottom-50">
                 <div class="container featurette">
-                    <h2 class="featurette-heading"><span class="msg_title_plan">Choose a plan.</span><br><span class="text-muted msg_subtitle_plan">We thinked in yours needs.</span></h2>
+                    <h2 class="featurette-heading"><span class="msg_title_plan"> </span><br><span class="text-muted msg_subtitle_plan"> </span></h2>
                     <div class="padding-bottom-50 padding-top-20">
                         <div class="col-md-4">
                             <div class="panel panel-info">
                                 <div class="recommended"><img src="img/recommended.svg"/></div>
                                 <div class="panel-heading">
-                                    <h4 class="text-center msg_title_plan_free">
-                                        FREE PLAN</h4>
+                                    <h4 class="text-center msg_title_plan_free"> </h4>
                                 </div>
                                 <div class="panel-body text-center">
                                     <p class="lead">
-                                        <strong>It's really free</strong></p>
+                                        <strong class="msg_title_plan_free_text"> </strong></p>
                                 </div>
                                 <ul class="list-group text-center">
-                                    <li class="list-group-item">Personal use</li>
-                                    <li class="list-group-item">At 4 devices</li>
-                                    <li class="list-group-item">Not support savebox</li>
+                                    <li class="list-group-item msg_title_plan_free_item_1"> </li>
+                                    <li class="list-group-item msg_title_plan_free_item_2"> </li>
+                                    <li class="list-group-item msg_title_plan_free_item_3"> </li>
                                 </ul>
                                 <div class="panel-footer">
-                                    <a class="btn btn-lg btn-block btn-info" href="http://savenergies.com/index.php/component/users/?view=registration"> Access Free!</a>
+                                    <a class="btn btn-lg btn-block btn-info msg_shopping_card" href="http://savenergies.com/index.php/component/users/?view=registration">  </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="panel panel-info soon">
                                 <div class="panel-heading">
-                                    <h4 class="text-center msg_title_plan_home">
-                                        HOME PLAN</h4>
+                                    <h4 class="text-center msg_title_plan_home"></h4>
                                 </div>
                                 <div class="panel-body text-center">
                                     <p class="lead">
-                                        <strong>$20 / month</strong></p>
+                                        <strong class="msg_title_plan_home_text"></strong></p>
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Residencial use</li>
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>At 6 devices</li>
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Support 1 savebox</li>
+                                    <li class="list-group-item msg_title_plan_home_item_1"><i class="icon-ok text-danger"></i> </li>
+                                    <li class="list-group-item msg_title_plan_home_item_2"><i class="icon-ok text-danger"></i> </li>
+                                    <li class="list-group-item msg_title_plan_home_item_3"><i class="icon-ok text-danger"></i> </li>
                                 </ul>
                                 <div class="panel-footer">
-                                    <a class="btn btn-lg btn-block btn-info" href="#"><i class="fa fa-shopping-cart"> </i> BUY NOW!</a>
+                                    <a class="btn btn-lg btn-block btn-info msg_shopping_card" href="#"><i class="fa fa-shopping-cart "> </i>  </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="panel panel-info soon">
                                 <div class="panel-heading">
-                                    <h4 class="text-center msg_title_plan_super">
-                                        SUPER PLAN</h4>
+                                    <h4 class="text-center msg_title_plan_super"></h4>
                                 </div>
                                 <div class="panel-body text-center">
                                     <p class="lead">
-                                        <strong>$50 / month</strong></p>
+                                        <strong class="msg_title_plan_super_text"></strong></p>
                                 </div>
                                 <ul class="list-group list-group-flush text-center">
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Enterprise use</li>
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>Unlimited devices</li>
-                                    <li class="list-group-item"><i class="icon-ok text-danger"></i>At 5 saveboxes</li>
+                                    <li class="list-group-item msg_title_plan_super_item_1"><i class="icon-ok text-danger"></i> </li>
+                                    <li class="list-group-item msg_title_plan_super_item_2"><i class="icon-ok text-danger"></i> </li>
+                                    <li class="list-group-item msg_title_plan_super_item_3"><i class="icon-ok text-danger"></i> </li>
                                 </ul>
                                 <div class="panel-footer">
-                                    <a class="btn btn-lg btn-block btn-info" href="#"><i class="fa fa-shopping-cart"> </i> BUY NOW!</a>
+                                    <a class="btn btn-lg btn-block btn-info msg_shopping_card" href="#"><i class="fa fa-shopping-cart "> </i>  </a>
                                 </div>
                             </div>
                         </div>
@@ -357,49 +333,58 @@
                 <div class="container">
                     <div class="row">
                         <div class="text-right">
-                            <h2 class="section-heading">Start save up energy, now!</h2>
+                            <h2 class="section-heading msg_heading_call_us"> </h2>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </section>
             <!-- CONTACT -->
             <div class="full padding-bottom-50 padding-top-50" id="contact">
                 <div class="container featurette">
                     <div class="col-md-6">
-                        <h2 class="featurette-heading">Call us.</h2>
-                        <p class="lead">To learn more about Savenergy's products or you have some difficulty in handling, please send us a message.</p>
+                        <h2 class="featurette-heading msg_tittle_call_us"> </h2>
+                        <p class="lead msg_text_call_us"> </p>
                         <!-- BEGIN FORM-->
                         <form action="" id="contact-form" class="default-form contact-form" role="form">
                             <div class="form-group">
                                 <!--      <label for="name">Name</label>-->
-                                <input type="text" class="form-control" name="name" placeholder="Your name">
+                                <input type="text" class="form-control" name="name" placeholder="Nome">
                             </div>
                             <div class="form-group">
                                 <!--      <label for="email">Email <span class="require">*</span></label>-->
-                                <input type="text" class="form-control" name="email" placeholder="Your email">
+                                <input type="text" class="form-control" name="email" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <!--      <label for="email">Email <span class="require">*</span></label>-->
-                                <input type="text" class="form-control" name="subject" placeholder="Your subject">
+                                <input type="text" class="form-control" name="subject" placeholder="Assunto">
                             </div>
                             <div class="form-group">
                                 <!--      <label for="message">Message</label>-->
-                                <textarea class="form-control" rows="8" name="message" placeholder="Your message"></textarea>
+                                <textarea class="form-control" rows="8" name="message" placeholder="Menssagem"></textarea>
                             </div>
                             <div class="padding-top-20">   
 
-                                <button id="contact-button"  type="submit" class="btn btn-xl btn-info bt-form"><i class="fa fa-paper-plane"> </i> Send</button>
+                                <button id="contact-button"  type="submit" class="btn btn-xl btn-info bt-form msg_email_send"><i class="fa fa-paper-plane"> </i>  </button>
                             </div>
                             <p></p>
-                            <div class="data-status"> </div>  
 
                         </form>
                         <!-- END FORM-->
+                        <div class="contact-form"> 
+                            <div class="alert alert-info msg_alert_contact_sending" style="display: none" role="alert">
 
+                            </div>
+                            <div class="alert alert-success msg_alert_contact_sucess" style="display: none" role="alert">
+
+                            </div> 
+                            <div class="alert alert-danger msg_alert_contact_error" style="display: none" role="alert">
+
+                            </div>
+                        </div> 
                     </div>
                     <div class="col-md-6">
                         <div class="col-md-12">
-                            <h2 class="featurette-heading">Docs to help.</h2>
+                            <h2 class="featurette-heading msg_text_help"> </h2>
                             <ul class="list-inline">
                                 <li class="col-md-4"><a href="manuals.html" target="blank" class="text-center docs"><img src="img/manual-sensor.svg" class="view"/><img src="img/more.svg" class="more"/></a>
                                 </li>
@@ -410,13 +395,13 @@
                             </ul>
                         </div>
                         <div class="col-md-12">
-                            <h2 class="featurette-heading">Follow us.</h2>
+                            <h2 class="featurette-heading msg_text_follow"> </h2>
                             <ul class="list-inline">
-                                <li><a href="https://www.facebook.com/SavenergyEcothings" target="blank"><img src="img/face-logo.svg" alt="facebook from savenergy" /></a>
+                                <li><a href="https://www.facebook.com/NeovuEcothings" target="blank"><img src="img/face-logo.svg" alt="facebook from Neovu® Saveplug" /></a>
                                 </li>
-                                <li><a href="https://twitter.com/savenergy_me" target="blank"><img src="img/tweet-logo.svg" alt="twitter from savenergy"/></a>
+                                <li><a href="https://twitter.com/savenergy_me" target="blank"><img src="img/tweet-logo.svg" alt="twitter from Neovu® Saveplug"/></a>
                                 </li>
-                                <li><a href="https://github.com/neovu" target="blank"><img src="img/git-logo.svg" alt="git from neovu owner of the savenergy"/></a>
+                                <li><a href="https://github.com/neovu" target="blank"><img src="img/git-logo.svg" alt="git from neovu owner of the Neovu® Saveplug"/></a>
                                 </li>
                             </ul>
                         </div>
@@ -431,13 +416,13 @@
                 <div class="container margin-top-20">
                     <div class="row">
                         <div class="col-md-5">
-                            <span class="copyright">Savenergy 2015. &copy;<a href="http://www.neovu.com.br"><img src="img/powered.png" width="70"/></a></span>
+                            <span class="copyright"><a href="http://www.neovu.com.br"><img src="img/powered.png" width="70"/></a></span>
                         </div>
                         <div class="col-md-4">
                             <ul class="list-inline quicklinks">
-                                <li><a href="#">Privacy Policy</a>
+                                <li><a href="http://www.neovu.com.br/privacy" class="msg_privacy"> </a>
                                 </li>
-                                <li><a href="#">Terms of Use</a>
+                                <li><a href="http://www.neovu.com.br/terms" class="msg_terms"> </a>
                                 </li>
                             </ul>
                         </div>
@@ -445,97 +430,20 @@
                 </div>
             </footer>
 
-        </div><!-- /.container -->
-
+        </div>  
         <div class="form-group">
             <select id="sidebar" class="form-control">
-                <!--                <option value="browser" selected>Default</option>-->
-                <option value="en">EN</option>
                 <option value="pt_PT">PT</option>
-                <option value="es_ES">ES</option>
-                <!--                <option value="fr">fr</option>-->
-
-            </select  >
+                <option value="en_US">EN</option> 
+                <option value="es_ES">ES</option> 
+            </select>
         </div>
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->  
-
         <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/savenergy.js"></script>
-        <script src="bower_components/jquery-i18n-properties/jquery.i18n.properties.js" type="text/javascript"></script> 
-        <script src="js/translate-savenergy.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> 
+        <script src="bower_components/jquery-i18n-properties/jquery.i18n.properties.js" type="text/javascript"></script>  
         <script src="bower_components/scrollspy/jquery.scrollspy.min.js" type="text/javascript"></script>
-
-        <script>
-                                    jQuery('#contact-button').click(function (e) {
-                                        e.preventDefault();
-                                        var submitData = jQuery('#contact-form').serialize();
-                                        var $name = jQuery('#contact-form').find('input[name="name"]');
-                                        var $email = jQuery('#contact-form').find('input[name="email"]');
-                                        var $subject = jQuery('#contact-form').find('textarea[name="subject"]');
-                                        var $message = jQuery('#contact-form').find('textarea[name="message"]');
-                                        var $submit = jQuery('#contact-form').find('button[name="submit"]');
-                                        var $dataStatus = jQuery('#contact-form').find('.data-status');
-
-                                        $name.attr('disabled', 'disabled');
-                                        $email.attr('disabled', 'disabled');
-                                        $subject.attr('disabled', 'disabled');
-                                        $message.attr('disabled', 'disabled');
-                                        $submit.attr('disabled', 'disabled');
-
-                                        $dataStatus.show().html('<div class="alert alert-info"><strong>Sending...</strong></div>');
-                                        console.log("clie de mail" + submitData);
-
-                                        jQuery.ajax({
-                                            type: 'POST',
-                                            url: '/mail/send_mail.php',
-                                            data: submitData + '&action=add',
-                                            dataType: 'text',
-                                            success: function (msg) {
-                                                var msg_split = msg.split('|');
-                                                if (msg_split[0] === 'success') {
-                                                    $name.val('').removeAttr('disabled');
-                                                    $email.val('').removeAttr('disabled');
-                                                    $subject.val('').removeAttr('disabled');
-                                                    $message.val('').removeAttr('disabled');
-                                                    $submit.removeAttr('disabled');
-                                                    $dataStatus.html(msg_split[1]).fadeIn();
-                                                } else {
-                                                    $name.removeAttr('disabled');
-                                                    $email.removeAttr('disabled');
-                                                    $subject.removeAttr('disabled');
-                                                    $message.removeAttr('disabled');
-                                                    $submit.removeAttr('disabled');
-                                                    $dataStatus.html(msg_split[1]).fadeIn();
-                                                }
-
-                                            }
-                                        });
-
-                                    });
-
-
-                                    (function (i, s, o, g, r, a, m) {
-                                        i['GoogleAnalyticsObject'] = r;
-                                        i[r] = i[r] || function () {
-                                            (i[r].q = i[r].q || []).push(arguments)
-                                        }, i[r].l = 1 * new Date();
-                                        a = s.createElement(o),
-                                                m = s.getElementsByTagName(o)[0];
-                                        a.async = 1;
-                                        a.src = g;
-                                        m.parentNode.insertBefore(a, m)
-                                    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-                                    ga('create', 'UA-40632331-3', 'auto');
-                                    ga('send', 'pageview');
-
-
-        </script>
-
+        <script src="js/app.js"></script>
 
     </body>
 </html>
