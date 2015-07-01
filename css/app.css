@@ -250,7 +250,8 @@ video { display: block; }
     right: 0;
     left: 0;
     z-index: 20;
-    background: rgba(0, 170, 219, 0.85);
+/*    background: rgba(0, 170, 219, 0.85);*/
+background: rgba(255,255,255,0.85);
     letter-spacing: 1px;
     font-size: 1.25em;
     font-weight: 100;
@@ -285,9 +286,9 @@ video { display: block; }
     padding-left: 15px;
 }
 .navbar-inverse .navbar-brand {
-    margin-top:10px;
+    margin-top:8px;
     margin-left: 10px;
-    padding: 3px 15px;
+    padding: 0px 15px;
 }
 
 /*a.navbar-brand img {
@@ -295,7 +296,7 @@ video { display: block; }
 }*/
 
 .navbar-header img{
-    width: 90px;
+    width: 120px;
     
 }
 
@@ -305,7 +306,11 @@ video { display: block; }
 
 .navbar-inverse .navbar-nav > .active > a{
     border-radius: 5px;
-    background: rgba(0,0,0,0.1);
+    background: transparent;
+    border: 1px solid #5a5a5a;
+    color: #5a5a5a;
+    padding: 7px 15px;
+  margin-top: 7px;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
@@ -313,6 +318,12 @@ video { display: block; }
 .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: transparent;
 }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #999;
+  background-color: transparent;
+}
+
 .dropdown-menu {
     border: 0px; 
     border-radius: 3px;
@@ -335,6 +346,9 @@ video { display: block; }
 .navbar-inverse .navbar-collapse {
     border-color: #00AADB;
 
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #5a5a5a;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -613,7 +627,7 @@ video { display: block; }
 }
 #sidebar.form-control {
 
-    width: 7%; 
+    width: 4%; 
 
     color: #FFF;
     background-color: #525252;
@@ -668,11 +682,11 @@ video { display: block; }
 }
 
 .value2{
-    background-image: url("../img/bg-benefits3.jpg");
+    background-image: url("../img/bg-benefit4.jpg");
     background-size: cover;
-    background-position: right bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
     font-weight: 100;
 }
 
@@ -683,16 +697,17 @@ video { display: block; }
 .value2 a > i {
     font-size: 50px;
     font-weight: 100;
-    color: #333;
+    color: #fff;
     margin-top: 40px;
 }
 
 .value2 a  {
     text-decoration: none;
-    background-color: #fff;
+    background-color:rgba(255,255,255,0);
     padding: 35px 15px 10px;
     border-radius: 50%;
     line-height: 1;
+    border: 2px solid #fff;
 }
 
 .panel {
