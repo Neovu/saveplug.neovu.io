@@ -106,48 +106,60 @@ $(document).ready(function () {
     $('#contact-button').click(function (e) {
         e.preventDefault();
         var submitData = $('#contact-form').serialize();
-        var $name = $('#contact-form').find('input[name="name"]');
-        var $email = $('#contact-form').find('input[name="email"]');
-        var $subject = $('#contact-form').find('textarea[name="subject"]');
-        var $message = $('#contact-form').find('textarea[name="message"]');
-        var $submit = $('#contact-form').find('button[name="submit"]');
-        var $dataStatus = $('#contact-form').find('.data-status');
-
-        $name.attr('disabled', 'disabled');
-        $email.attr('disabled', 'disabled');
-        $subject.attr('disabled', 'disabled');
-        $message.attr('disabled', 'disabled');
-        $submit.attr('disabled', 'disabled');
-
-        $dataStatus.show().html('<div class="alert alert-info"><strong>Sending...</strong></div>');
-        console.log("clie de mail" + submitData);
+        
+        $('.contact-form').find('.msg_alert_contact_sending').show();
 
         $.ajax({
             type: 'POST',
             url: '/mail/send_mail.php',
-            data: submitData + '&action=add',
+            data: submitData + '&action=contact',
             dataType: 'text',
             success: function (msg) {
                 var msg_split = msg.split('|');
                 if (msg_split[0] === 'success') {
-                    $name.val('').removeAttr('disabled');
-                    $email.val('').removeAttr('disabled');
-                    $subject.val('').removeAttr('disabled');
-                    $message.val('').removeAttr('disabled');
-                    $submit.removeAttr('disabled');
-                    $dataStatus.html(msg_split[1]).fadeIn();
+                    
+                    $('.contact-form').find('.msg_alert_contact_sending').hide();
+                    $('.contact-form').find('.msg_alert_contact_sucess').show();
+                    $('.contact-form').find('.msg_alert_contact_error').hide();
                 } else {
-                    $name.removeAttr('disabled');
-                    $email.removeAttr('disabled');
-                    $subject.removeAttr('disabled');
-                    $message.removeAttr('disabled');
-                    $submit.removeAttr('disabled');
-                    $dataStatus.html(msg_split[1]).fadeIn();
+                    
+                    $('.contact-form').find('.msg_alert_contact_sending').hide();
+                    $('.contact-form').find('.msg_alert_contact_sucess').hide();
+                    $('.contact-form').find('.msg_alert_contact_error').show();
                 }
 
             }
         });
 
+    });
+
+    $('#buy-button').click(function (e) {
+        e.preventDefault();
+        var submitData = $('#buy-form').serialize();
+        
+        $('.buy-form').find('.msg_alert_buy_sending').show(); 
+        $.ajax({
+            type: 'POST',
+            url: '/mail/send_mail.php',
+            data: submitData + '&action=buy',
+            dataType: 'text',
+            success: function (msg) {
+                var msg_split = msg.split('|');
+                if (msg_split[0] === 'success') { 
+
+                    $('.buy-form').find('.msg_alert_buy_sending').hide();
+                    $('.buy-form').find('.msg_alert_buy_sucess').show();
+                    $('.buy-form').find('.msg_alert_buy_error').hide();
+                } else {
+                   
+                    $('.buy-form').find('.msg_alert_buy_sending').hide();
+                    $('.buy-form').find('.msg_alert_buy_sucess').hide();
+                    $('.buy-form').find('.msg_alert_buy_error').show();
+                } 
+
+            }
+        });
+        ga('send', 'event', {eventCategory: 'Buy', eventAction: 'Buy-Savelug', eventLabel: 'Clicked'});
     });
 
     $(window).scroll(function () {
