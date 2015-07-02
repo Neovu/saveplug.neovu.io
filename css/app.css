@@ -17,7 +17,7 @@
     background: #00BDF4;
 }
 .blue2{
-    background: #00C6FF;
+    background: #E8E8E8;
 }
 
 .text-blue2{
@@ -27,7 +27,7 @@
     color:#008CB0;
 }
 .blue3{
-    background: #4CD7FF;
+    background: #F2F2F2;
 }
 .yellow{
     background: #FFCC33;
@@ -147,6 +147,38 @@ body {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+.btn-default-inverse {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-default-inverse:hover {
+  border: 1px solid #fff;
+  color: #5a5a5a;
+  background-color: #fff;
+  
+}
+
+.btn-default-inverse-bk {
+  border: 1px solid #5a5a5a;
+  color: #5a5a5a;
+  background-color: transparent;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-default-inverse-bk:hover {
+  border: 1px solid #5a5a5a;
+  color: #fff;
+  background-color: #5a5a5a;
+  
 }
 
 .visible{
@@ -535,7 +567,7 @@ background: rgba(255,255,255,0.85);
     margin-left: 10px;
 }
 .text-muted{
-    color: white;
+    color: rgb(173, 173, 173);
 }
 
 .bg-primary {
