@@ -29,7 +29,7 @@
         <link href="css/app.css" rel="stylesheet">
     </head>
 
-    <body data-spy="scroll" data-target=".navbar-nav" data-offset="89">
+    <body data-spy="scroll" data-target="navbar-nav" data-offset="89">
 
         <div class="navbar-wrapper" id="saveNav">
             <div class="container">
@@ -37,21 +37,21 @@
                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#myCarousel"><img src="img/logo-alfa.svg"/></a>
+                            <a class="navbar-brand" href="#myCarousel"><img src="img/neovu-savehome.svg"/></a>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li ><a href="#benefits" class="msg_overview_nav"></a></li>
-                                <li><a href="#products" class="msg_products_nav"></a></li>
-                                <li><a href="#plans" class="msg_plans_nav"></a></li>
+                                <li><a href="#video-save" class="msg_products_nav"></a></li>
+<!--                                <li><a href="#plans" class="msg_plans_nav"></a></li>-->
                                 <li><a href="#contact" class="msg_contact_nav"></a></li>
-                                <li><a href="store.html" class="msg_store_nav" onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"></a></li>
+                                <li><a href="store.html"  onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"><i class="fa fa-shopping-cart"></i></a></li>
 
                                 <li class="active"><a href="http://www.savenergies.com" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
                             </ul>
@@ -74,26 +74,19 @@
 
                 <div class="item active">
 
-                    <div class="container">
-                        <!--                        <img src="img/saveplug.png" alt="First slide">-->
-                        <div class="fill text-center" style= "background-image:url(../img/img-saveplug-banner-3.png);">
+                       
+                        <div class="fill" style= "background-image:url(../img/img-saveplug-banner-3-1.jpg);">
                             <div class="carousel-caption">
-
-
                                 <h1 class="msg_title_banner_1"> </h1>
                                 <p class="msg_subtitle_banner_1"> </p>
-                                <p><a href="saveplug.html" class="btn btn-xl btn-default msg_shopping_card"><i class="fa fa-shopping-cart "> </i> <span class="msg_btn_banner_1">Buy now!</span></a></p>
-
-                                <!--                            <p><a class="btn btn-xl btn-default msg_btn_banner_1" href="saveplug.html" role="button">BUY NOW!</a></p>-->
+                                <p><a href="saveplug.html" class="btn btn-xl btn-default"><i class="fa fa-shopping-cart "> </i> <span class=" msg_shopping_card"> </span></a></p>
                             </div>
                         </div>
-
-                    </div>
                 </div>
                 <div class="item">
-                    <!--          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">-->
-                    <div class="row">
-                        <div class="fill-2 text-center" style= "background-image:url(../img/img-savapp-banner-3.jpg);">
+                    <!--          <img data-src="himg/img-savapp-banner-3.jpg" alt="Second slide">-->
+                    
+                        <div class="fill-2 fill" style= "background-image:url(../img/img-savapp-banner-3.jpg);">
                             <div class="carousel-caption">
 
                                 <h1 class="msg_title_banner_2"> </h1>
@@ -103,7 +96,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    
                 </div>
                 <div class="item">
                     <div class="container">
@@ -129,21 +122,24 @@
             <article class="container">
                 <h2 class="msg_title_benefits featurette-heading"> </h2>
                 <p class="msg_subtitle_benefits padding-bottom-30"> </p>
-                <div class="col-lg-4 padding-top-50 rose padding-bottom-30">
-                    <img src="img/ic-benefits-people.svg" alt="Generic placeholder image">
+                <div class="col-lg-4 padding-top-50 rose padding-bottom-30 economy">
+                    <img class="img-economy" src="img/ic-benefits-economy.svg" alt="Generic placeholder image">
+                    <img class="img-economy-over" src="img/ic-benefits-economy-over.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
                     <h2 class="msg_title_col_benefits_1"> </h2>
 
                     <p class="msg_content_col_benefits_1"> </p>
 
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4 padding-top-50 padding-bottom-30">
-                    <img class="" src="img/ic-benefits-comfort.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
+                <div class="col-lg-4 padding-top-50 padding-bottom-30 comfort">
+                    <img class="img-comfort" src="img/ic-benefits-comfort-2.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
+                    <img class="img-comfort-over" src="img/ic-benefits-comfort-over.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
                     <h2 class="msg_title_col_benefits_2"> </h2>
                     <p class="msg_content_col_benefits_2"> </p>
                 </div><!-- /.col-lg-4 -->
 
-                <div class="col-lg-4 padding-top-50 padding-bottom-30">
-                    <img class="" src="img/ic-benefits-management.svg" alt="gestao facil do consumo energético da casa">
+                <div class="col-lg-4 padding-top-50 padding-bottom-30 security">
+                    <img class="img-security" src="img/ic-benefits-security.svg" alt="gestao facil do consumo energético da casa">
+                     <img class="img-security-over" src="img/ic-benefits-security-over.svg" alt="benficios do conforto e seguranca de se usar o Neovu® Saveplug">
                     <h2 class="msg_title_col_benefits_3"> </h2>
                     <!--                    <h2>Really save energy in a fun way</h2>-->
                     <p class="msg_content_col_benefits_3"> </p>
@@ -152,16 +148,26 @@
 
             </article>
         </section> 
-        <section class="bg-primary value2">
-            <div class="container">
-                <div class="row">
+        <section class="text-center">
+             <h2 class="section-heading padding-top-50 padding-bottom-50 msg_heading_video"> </h2>
+<!--                        <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>-->
+        <article class="bg-primary value2 col-md-6">
+            
                     <div class="text-left padding-left-20">
-                        <h2 class="section-heading padding-top-70 msg_heading_video"> </h2>
-                        <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>
+<!--                        <h2 class="section-heading padding-top-70 msg_heading_video"> </h2>
+                        <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>-->
                     </div>
-                </div>
-            </div>
-        </section>  
+                
+        </article> 
+            <article class="bg-primary value3 col-md-6">
+            
+                    <div class="text-left padding-left-20">
+<!--                        <h2 class="section-heading padding-top-70 msg_heading_video"> </h2>
+                        <a href="#video-save" class="margin-top-50"><i class="fa fa-angle-down"></i></a>-->
+                    </div>
+                
+        </article> 
+        </section>
         <section class="text-center" id="works">
             <video id="video-save"  loop poster="img/poster-video-savenergy.svg" class="" controls>
                 <source src="video/savenergy.mp4" type="video/mp4">
@@ -241,14 +247,14 @@
                     <div class="col-md-7 padding-top-50">
                         <h2 class="featurette-heading"><span class="msg_title_features_3"> </span> <br><span class="text-muted msg_subtitle_features_3"> </span></h2>
                         <p class="lead msg_text_1_features_3"> </p>
-                        <p><a class="btn btn-xl btn-default open-saveflow " href="#saveflow" role="button"><i class="fa fa-plus"> </i>  </a></p>
+<!--                        <p><a class="btn btn-xl btn-default open-saveflow " href="#saveflow" role="button"><i class="fa fa-plus"> </i>  </a></p>-->
                     </div>
                     <div class="col-md-5">
-                        <img class="img-responsive" src="img/savebox.svg" alt="Generic placeholder image">
+                        <img class="img-responsive" src="img/sketch-saveflow.svg" alt="Generic placeholder image">
                     </div>
                 </div>
             </div>
-            <div class="full gray padding-top-50 padding-bottom-50 hidden" id="saveflow">
+<!--            <div class="full gray padding-top-50 padding-bottom-50 hidden" id="saveflow">
                 <div class="container featurette">
                     <div class="col-md-12">
                         <h2 class="featurette-heading space-left">Saveflow <a href="#savebox" class="pull-right close-saveflow"><span>X</span></a></h2>
@@ -261,8 +267,8 @@
 
                 </div>
 
-            </div>
-            <div id="plans" class="blue padding-top-70 padding-bottom-50">
+            </div>-->
+<!--            <div id="plans" class="blue padding-top-70 padding-bottom-50">
                 <div class="container featurette">
                     <h2 class="featurette-heading"><span class="msg_title_plan"> </span><br><span class="text-muted msg_subtitle_plan"> </span></h2>
                     <div class="padding-bottom-50 padding-top-20">
@@ -326,14 +332,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <!-- /END THE FEATURETTES -->
             <section class="bg-primary value">
                 <div class="container">
                     <div class="row">
-                        <div class="text-right">
-                            <h2 class="section-heading msg_heading_call_us"> </h2>
+                        <div class="text-left">
+                           
+                            <h2 class="section-heading msg_heading_shop_us"> </h2>
+                            <p class="msg_paraph_shop_us"></p>
+                            <p><a href="saveplug.html" class="btn btn-xl btn-default"><i class="fa fa-shopping-cart "> </i> <span class=" msg_shopping_card"> </span></a></p>
                         </div>
                     </div> 
                 </div>
@@ -394,17 +403,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-12">
-                            <h2 class="featurette-heading msg_text_follow"> </h2>
-                            <ul class="list-inline">
-                                <li><a href="https://www.facebook.com/NeovuEcothings" target="blank"><img src="img/face-logo.svg" alt="facebook from Neovu® Saveplug" /></a>
-                                </li>
-                                <li><a href="https://twitter.com/savenergy_me" target="blank"><img src="img/tweet-logo.svg" alt="twitter from Neovu® Saveplug"/></a>
-                                </li>
-                                <li><a href="https://github.com/neovu" target="blank"><img src="img/git-logo.svg" alt="git from neovu owner of the Neovu® Saveplug"/></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                 </div>
@@ -413,12 +411,22 @@
             <!-- /END CONTACT -->
             <!-- FOOTER -->
             <footer>
-                <div class="container margin-top-20">
+                <div class="container margin-top-20 text-center">
                     <div class="row">
-                        <div class="col-md-5">
-                            <span class="copyright"><a href="http://www.neovu.com.br"><img src="img/powered.png" width="70"/></a></span>
+                        <div class="col-md-4 padding-bottom-30">
+                            <ul class="list-inline">
+                                <li><a href="https://www.facebook.com/neovu" target="blank"><img src="img/face-logo.svg" alt="facebook from Neovu® Saveplug" /></a>
+                                </li>
+                                <li><a href="https://twitter.com/neovudesign" target="blank"><img src="img/tweet-logo.svg" alt="twitter from Neovu® Saveplug"/></a>
+                                </li>
+                                <li><a href="https://github.com/neovu" target="blank"><img src="img/git-logo.svg" alt="git from neovu owner of the Neovu® Saveplug"/></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 padding-bottom-3">
+                            <span class="copyright"><a href="http://www.neovu.com.br"><img src="img/neovu-logotype.svg" width="70"/></a></span>
+                        </div>
+                        <div class="col-md-4 padding-bottom-3">
                             <ul class="list-inline quicklinks">
                                 <li><a href="http://www.neovu.com.br/privacy" class="msg_privacy"> </a>
                                 </li>
@@ -426,6 +434,7 @@
                                 </li>
                             </ul>
                         </div>
+                        
                     </div>
                 </div>
             </footer>

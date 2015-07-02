@@ -96,9 +96,9 @@ $(document).ready(function () {
         e.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - 69
+            scrollTop: $(this.hash).offset().top - 90
         }, 1000, function () {
-            window.location.hash = hash - 69;
+            window.location.hash = hash - 90;
         });
 
     });
@@ -162,31 +162,31 @@ $(document).ready(function () {
         ga('send', 'event', {eventCategory: 'Buy', eventAction: 'Buy-Savelug', eventLabel: 'Clicked'});
     });
 
-    $(window).scroll(function () {
-        //variavel semi-global
-        var hScrollTop = $(this).scrollTop();
-        var go = true;
-        //Menu Fixo: barra cinza
-        if (hScrollTop > 10 && go) {
-            $(".navbar-wrapper").stop().animate({
-                "font-size": "1em",
-                height: "70px"}, "fast");
-            $(".navbar-header img").stop().animate({
-                width: "70px"}, "fast");
-            $(".navbar-collapse").stop().animate({"margin-top": "10px"}, "fast");
-            go = false;
-        }
-        else if (hScrollTop < 10 && go) {
-            $(".navbar-wrapper").stop().animate({
-                "font-size": "1.25em",
-                height: "90px"}, "fast");
-            $(".navbar-header img").stop().animate({
-                width: "90px"}, "fast");
-            $(".navbar-collapse").stop().animate({"margin-top": "20px"}, "fast");
-
-            go = true;
-        }
-    });
+//    $(window).scroll(function () {
+//        //variavel semi-global
+//        var hScrollTop = $(this).scrollTop();
+//        var go = true;
+//        //Menu Fixo: barra cinza
+//        if (hScrollTop > 10 && go) {
+//            $(".navbar-wrapper").stop().animate({
+//                "font-size": "1em",
+//                height: "70px"}, "fast");
+//            $(".navbar-header img").stop().animate({
+//                width: "90px"}, "fast");
+//            $(".navbar-collapse").stop().animate({"margin-top": "10px"}, "fast");
+//            go = false;
+//        }
+//        else if (hScrollTop < 10 && go) {
+//            $(".navbar-wrapper").stop().animate({
+//                "font-size": "1.25em",
+//                height: "90px"}, "fast");
+//            $(".navbar-header img").stop().animate({
+//                width: "120px"}, "fast");
+//            $(".navbar-collapse").stop().animate({"margin-top": "20px"}, "fast");
+//
+//            go = true;
+//        }
+//    });
 
     // configure language combo box
     $('#sidebar').change(function () {
