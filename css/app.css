@@ -356,7 +356,7 @@ background: rgba(255,255,255,0.85);
 
 /* Carousel base class */
 .carousel {
-    height: 680px;
+    height: 768px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -364,11 +364,12 @@ background: rgba(255,255,255,0.85);
     text-shadow: none;
     right: 0;
     left: 0;
+    top:120px;
     padding-top: 5px;
     padding-bottom: 20px;
     color: #5a5a5a;
     text-align: center;
-    position: relative;
+    position: absolute;
 }
 .carousel-caption h1{
     font-weight: 100;
@@ -385,12 +386,15 @@ background: rgba(255,255,255,0.85);
     font-size: 18px;
     margin-bottom: 0;
 }
-
+.carousel .item.active{
+    
+    height: 768px;
+}
 
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 680px;
+    height: 768px;
     /*    background-color: #00aadb;*/
     /*  background:  no-repeat center center fixed #00aadb;*/
 }
@@ -408,43 +412,27 @@ background: rgba(255,255,255,0.85);
     bottom: 20px;
 }
 .fill {
-    margin-top: 15%;
-
-    height: 680px; 
+    
+    width: 100%;
+    height: 768px; 
     background-position: center;
-    -webkit-background-size: 80%;
-    -moz-background-size: 80%;
-    background-size: 80%;
-    background-repeat: no-repeat;
-
-    -o-background-size: 80%;
-}
-
-.fill .carousel-caption{
-
-    margin-top: 150px;
-
-}
-
-
-.fill-2 {
-    height: 800px;
-    background-position: center right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     -o-background-size: cover;
+}
+
+
+
+.fill-2{
+    background-position: right bottom;
 }
 
 .fill-2 .carousel-caption{
     text-align: left;
     margin-left: 18.5%;
-    padding-top: 23%;
-}
-.item iframe{
-    width: 100%;
-    height: 100%;
+    padding-top: 10%;
 }
 
 .carousel-control {
@@ -552,7 +540,7 @@ background: rgba(255,255,255,0.85);
 
 .bg-primary {
     color: #fff;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 #about {
@@ -592,6 +580,44 @@ background: rgba(255,255,255,0.85);
     background: #F58144;
     border-radius: 5px;
 }*/
+
+.comfort:hover .img-comfort{
+    display: none;
+}
+
+.img-comfort-over{
+    display: none;
+}
+
+.comfort:hover .img-comfort-over{
+    display: inline-block;
+}
+
+
+.economy:hover .img-economy{
+    display: none;
+}
+
+.img-economy-over{
+    display: none;
+}
+
+.economy:hover .img-economy-over{
+    display: inline-block;
+}
+
+
+.security:hover .img-security {
+    display: none;
+}
+
+.img-security-over{
+    display: none;
+}
+
+.security:hover .img-security-over{
+    display: inline-block;
+}
 
 
 /* Featurettes
@@ -670,15 +696,22 @@ background: rgba(255,255,255,0.85);
 }
 
 .value{
-    background-image: url("../img/bg-value.jpg");
+    background-image: url("../img/bg-store.jpg");
     background-size: cover;
     background-position: left top;
     background-attachment: fixed;
     font-weight: 100;
+    height: 400px;
 }
 .value h2{
     font-weight: 100;
     padding-right: 20px;
+      font-size: 40px;
+}
+
+.value p{
+      font-size: 21px;
+  line-height: 1.4;
 }
 
 .value2{
@@ -688,6 +721,8 @@ background: rgba(255,255,255,0.85);
     background-repeat: no-repeat;
     height: 500px;
     font-weight: 100;
+   border-right: 1px solid #fff;
+   border-bottom: 2px solid #fff;
 }
 
 .value2 h2{
@@ -708,6 +743,16 @@ background: rgba(255,255,255,0.85);
     border-radius: 50%;
     line-height: 1;
     border: 2px solid #fff;
+}
+.value3{
+    background-image: url("../img/bg-saveplug-wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    font-weight: 100;
+    border-left: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .panel {
@@ -766,6 +811,11 @@ background: rgba(255,255,255,0.85);
 }
 .soon:hover{
     box-shadow: none;
+}
+
+
+footer ul li img{
+    width: 30px;
 }
 
 /* RESPONSIVE CSS
