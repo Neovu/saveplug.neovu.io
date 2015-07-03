@@ -17,7 +17,7 @@
     background: #00BDF4;
 }
 .blue2{
-    background: #00C6FF;
+    background: #E8E8E8;
 }
 
 .text-blue2{
@@ -27,7 +27,7 @@
     color:#008CB0;
 }
 .blue3{
-    background: #4CD7FF;
+    background: #F2F2F2;
 }
 .yellow{
     background: #FFCC33;
@@ -149,6 +149,38 @@ body {
     transition: all .35s;
 }
 
+.btn-default-inverse {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-default-inverse:hover {
+  border: 1px solid #fff;
+  color: #5a5a5a;
+  background-color: #fff;
+  
+}
+
+.btn-default-inverse-bk {
+  border: 1px solid #5a5a5a;
+  color: #5a5a5a;
+  background-color: transparent;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.btn-default-inverse-bk:hover {
+  border: 1px solid #5a5a5a;
+  color: #fff;
+  background-color: #5a5a5a;
+  
+}
+
 .visible{
     display: block;
 }
@@ -250,7 +282,8 @@ video { display: block; }
     right: 0;
     left: 0;
     z-index: 20;
-    background: rgba(0, 170, 219, 0.85);
+/*    background: rgba(0, 170, 219, 0.85);*/
+background: rgba(255,255,255,0.85);
     letter-spacing: 1px;
     font-size: 1.25em;
     font-weight: 100;
@@ -285,9 +318,9 @@ video { display: block; }
     padding-left: 15px;
 }
 .navbar-inverse .navbar-brand {
-    margin-top:10px;
+    margin-top:8px;
     margin-left: 10px;
-    padding: 3px 15px;
+    padding: 0px 15px;
 }
 
 /*a.navbar-brand img {
@@ -295,7 +328,7 @@ video { display: block; }
 }*/
 
 .navbar-header img{
-    width: 90px;
+    width: 120px;
     
 }
 
@@ -305,7 +338,11 @@ video { display: block; }
 
 .navbar-inverse .navbar-nav > .active > a{
     border-radius: 5px;
-    background: rgba(0,0,0,0.1);
+    background: transparent;
+    border: 1px solid #5a5a5a;
+    color: #5a5a5a;
+    padding: 7px 15px;
+  margin-top: 7px;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
@@ -313,6 +350,12 @@ video { display: block; }
 .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: transparent;
 }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #999;
+  background-color: transparent;
+}
+
 .dropdown-menu {
     border: 0px; 
     border-radius: 3px;
@@ -336,13 +379,16 @@ video { display: block; }
     border-color: #00AADB;
 
 }
+.navbar-inverse .navbar-nav > li > a {
+  color: #5a5a5a;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-    height: 680px;
+    height: 768px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -350,11 +396,12 @@ video { display: block; }
     text-shadow: none;
     right: 0;
     left: 0;
+    top:120px;
     padding-top: 5px;
     padding-bottom: 20px;
     color: #5a5a5a;
     text-align: center;
-    position: relative;
+    position: absolute;
 }
 .carousel-caption h1{
     font-weight: 100;
@@ -371,12 +418,15 @@ video { display: block; }
     font-size: 18px;
     margin-bottom: 0;
 }
-
+.carousel .item.active{
+    
+    height: 768px;
+}
 
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 680px;
+    height: 768px;
     /*    background-color: #00aadb;*/
     /*  background:  no-repeat center center fixed #00aadb;*/
 }
@@ -394,43 +444,27 @@ video { display: block; }
     bottom: 20px;
 }
 .fill {
-    margin-top: 15%;
-
-    height: 680px; 
+    
+    width: 100%;
+    height: 768px; 
     background-position: center;
-    -webkit-background-size: 80%;
-    -moz-background-size: 80%;
-    background-size: 80%;
-    background-repeat: no-repeat;
-
-    -o-background-size: 80%;
-}
-
-.fill .carousel-caption{
-
-    margin-top: 150px;
-
-}
-
-
-.fill-2 {
-    height: 800px;
-    background-position: center right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     -o-background-size: cover;
+}
+
+
+
+.fill-2{
+    background-position: right bottom;
 }
 
 .fill-2 .carousel-caption{
     text-align: left;
     margin-left: 18.5%;
-    padding-top: 23%;
-}
-.item iframe{
-    width: 100%;
-    height: 100%;
+    padding-top: 10%;
 }
 
 .carousel-control {
@@ -533,12 +567,12 @@ video { display: block; }
     margin-left: 10px;
 }
 .text-muted{
-    color: white;
+    color: rgb(173, 173, 173);
 }
 
 .bg-primary {
     color: #fff;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 #about {
@@ -579,6 +613,44 @@ video { display: block; }
     border-radius: 5px;
 }*/
 
+.comfort:hover .img-comfort{
+    display: none;
+}
+
+.img-comfort-over{
+    display: none;
+}
+
+.comfort:hover .img-comfort-over{
+    display: inline-block;
+}
+
+
+.economy:hover .img-economy{
+    display: none;
+}
+
+.img-economy-over{
+    display: none;
+}
+
+.economy:hover .img-economy-over{
+    display: inline-block;
+}
+
+
+.security:hover .img-security {
+    display: none;
+}
+
+.img-security-over{
+    display: none;
+}
+
+.security:hover .img-security-over{
+    display: inline-block;
+}
+
 
 /* Featurettes
 ------------------------- */
@@ -613,7 +685,7 @@ video { display: block; }
 }
 #sidebar.form-control {
 
-    width: 7%; 
+    width: 4%; 
 
     color: #FFF;
     background-color: #525252;
@@ -656,24 +728,33 @@ video { display: block; }
 }
 
 .value{
-    background-image: url("../img/bg-value.jpg");
+    background-image: url("../img/bg-store.jpg");
     background-size: cover;
     background-position: left top;
     background-attachment: fixed;
     font-weight: 100;
+    height: 400px;
 }
 .value h2{
     font-weight: 100;
     padding-right: 20px;
+      font-size: 40px;
+}
+
+.value p{
+      font-size: 21px;
+  line-height: 1.4;
 }
 
 .value2{
-    background-image: url("../img/bg-benefits3.jpg");
+    background-image: url("../img/bg-benefit4.jpg");
     background-size: cover;
-    background-position: right bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
     font-weight: 100;
+   border-right: 1px solid #fff;
+   border-bottom: 2px solid #fff;
 }
 
 .value2 h2{
@@ -683,16 +764,27 @@ video { display: block; }
 .value2 a > i {
     font-size: 50px;
     font-weight: 100;
-    color: #333;
+    color: #fff;
     margin-top: 40px;
 }
 
 .value2 a  {
     text-decoration: none;
-    background-color: #fff;
+    background-color:rgba(255,255,255,0);
     padding: 35px 15px 10px;
     border-radius: 50%;
     line-height: 1;
+    border: 2px solid #fff;
+}
+.value3{
+    background-image: url("../img/bg-saveplug-wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    font-weight: 100;
+    border-left: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .panel {
@@ -751,6 +843,11 @@ video { display: block; }
 }
 .soon:hover{
     box-shadow: none;
+}
+
+
+footer ul li img{
+    width: 30px;
 }
 
 /* RESPONSIVE CSS
