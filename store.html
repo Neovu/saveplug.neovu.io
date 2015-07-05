@@ -32,25 +32,29 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
-        <div class="navbar-wrapper">
+        <div class="navbar-wrapper" id="saveNav">
             <div class="container">
 
                 <div class="navbar navbar-inverse navbar-static-top" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="http://saveplug.neovu.io/index.html#myCarousel"><img src="img/logo-alfa.svg"/></a>
+                            <a class="navbar-brand" href="#myCarousel"><img src="img/neovu-savehome.svg"/></a>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
+                                <li ><a href="index.html#benefits" class="msg_overview_nav"></a></li>
+                                <li><a href="index.html#video-save" class="msg_products_nav"></a></li>
+<!--                                <li><a href="#plans" class="msg_plans_nav"></a></li>-->
+                                <li><a href="index.html#contact" class="msg_contact_nav"></a></li>
+                                <li><a href="#"  onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"><i class="fa fa-shopping-cart"></i></a></li>
 
-                                <li><a href="index.html" class="last-child-50 close">X</a></li>
-                                <!--                                <li class="active"><a href="http://www.savenergies.com">Login</a></li>-->
+                                <li class="active"><a href="http://www.savenergies.com" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
                             </ul>
                         </div>
                     </div>
