@@ -24,7 +24,7 @@
     color: #00C6FF;
 }
 .text-blue3{
-    color:#008CB0;
+    color:#5a5a5a;
 }
 .blue3{
     background: #F2F2F2;
@@ -47,11 +47,21 @@
     height: 50px;
 }
 
+.pace .pace-progress {
+  background: #5a5a5a;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
 body {
     padding-bottom: 40px;
     color: #5a5a5a;
     font-weight: 100;
-    font-family: 'SourceSansPro-Light', 'Helvetica', 'Arial';
+    font-family: 'SourceSansPro-Thin', 'Helvetica', 'Arial';
 
 }
 .margin-top-10{
@@ -133,6 +143,10 @@ body {
 .btn-xl {
     padding: 15px 30px;
 }
+
+.btn-block {
+    padding: 15px 30px;
+}
 .btn {
     border: 0;
     border-radius: 4px;
@@ -182,7 +196,7 @@ body {
 }
 
 .visible{
-    display: block;
+    display: inline-block;
 }
 
 video { display: block; }
@@ -443,6 +457,17 @@ background: rgba(255,255,255,0.85);
 .carousel-indicators-mini {
     bottom: 20px;
 }
+
+.carousel-indicators.carousel-indicators-mini li{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #5a5a5a
+}
+
+.carousel-indicators.carousel-indicators-mini li{
+    background-color: #5a5a5a;
+    border: 1px solid #5a5a5a;
+}
+
 .fill {
     
     width: 100%;
@@ -685,7 +710,8 @@ background: rgba(255,255,255,0.85);
 }
 #sidebar.form-control {
 
-    width: 4%; 
+    width: 4%;
+    max-width: 4%;
 
     color: #FFF;
     background-color: #525252;
@@ -747,7 +773,7 @@ background: rgba(255,255,255,0.85);
 }
 
 .value2{
-    background-image: url("../img/bg-benefit4.jpg");
+    background-image: url("../img/bg-benefit5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -803,7 +829,7 @@ background: rgba(255,255,255,0.85);
     padding-left: 5px;
 }
 .list-inline > li > a.docs  > img.view{
-    width: 120px;
+/*    width: 120px;*/
     border-radius: 4px;
     opacity: 1;
     -webkit-transition: all .2s ease .2s;
@@ -811,17 +837,53 @@ background: rgba(255,255,255,0.85);
     margin-bottom: 15px
 }
 
-.list-inline > li:hover > a.docs  > img.view{
+.list-inline > li > a.docs:hover  > img.view{
     display: none;
     opacity: 0;
 }
 
-.list-inline > li:hover > a.docs  > img.more{
-    display: block;
+.list-inline > li > a.docs:hover  > img.more{
+    display: inline-block;
     opacity: 1;
 }
+
+.api:hover .img-api{
+    display: none;
+}
+
+.img-api-over{
+    display: none;
+}
+
+.api:hover .img-api-over{
+    display: inline-block;
+}
+
+.blog:hover .img-blog{
+    display: none;
+}
+
+.img-blog-over{
+    display: none;
+}
+
+.blog:hover .img-blog-over{
+    display: inline-block;
+}
+
+.tutorial:hover .img-tutorial{
+    display: none;
+}
+
+.img-tutorial-over{
+    display: none;
+}
+
+.tutorial:hover .img-tutorial-over{
+    display: inline-block;
+}
 .more{
-    width: 120px;
+/*    width: 120px;*/
     border-radius: 4px;
     display: none;
     opacity: 0;
@@ -848,6 +910,14 @@ background: rgba(255,255,255,0.85);
 
 footer ul li img{
     width: 30px;
+}
+
+footer ul li a{
+    color: #5a5a5a;
+}
+
+footer ul li:hover a{
+    color: #999;
 }
 
 /* RESPONSIVE CSS
@@ -924,10 +994,11 @@ footer ul li img{
 
 @font-face {
     font-family: 'SourceSansPro-Regular';
+    src:  url('../font/HelveticaNeueLTStd-Roman_gdi.eot');
     src:  url('../font/HelveticaNeueLTStd-Roman_gdi.ttf') format('truetype'),
         url('../font/HelveticaNeueLTStd-Roman_gdi.woff') format('woff'),
         url('../font/HelveticaNeueLTStd-Roman_gdi.eot?#iefix') format('embedded-opentype');
-    src:  url('../font/HelveticaNeueLTStd-Roman_gdi.eot');
+    
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -936,7 +1007,7 @@ footer ul li img{
 @font-face {
     font-family: 'SourceSansPro-Light';
     src:  url('../font/HelveticaNeueLTStd-Lt_gdi.eot');
-    src:  url('../font/HelveticaNeueLTStd-Lt_gdi.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/HelveticaNeueLTStd-Lt_gdi.eot?#iefix') format('embedded-opentype'),
         url('../font/HelveticaNeueLTStd-Lt_gdi.woff') format('woff'),
         url('../font/HelveticaNeueLTStd-Lt_gdi.ttf') format('truetype');
     font-variant: normal;
@@ -946,11 +1017,12 @@ footer ul li img{
 
 @font-face {
     font-family: 'SourceSansPro-Thin';
+    src:  url('../font/HelveticaNeueLTStd-Th_gdi.eot');
     src:  url('../font/HelveticaNeueLTStd-Th_gdi.ttf') format('truetype'),
         url('../font/default/HelveticaNeueLTStd-Th.otf') format('opentype'),
         url('../font/HelveticaNeueLTStd-Th_gdi.woff') format('woff'),
         url('../font/HelveticaNeueLTStd-Th_gdi.eot?#iefix') format('embedded-opentype');
-    src:  url('../font/HelveticaNeueLTStd-Th_gdi.eot');
+    
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -958,10 +1030,11 @@ footer ul li img{
 
 @font-face {
     font-family: 'SourceSansPro-Medium';
+    src:  url('../font/HelveticaNeueLTStd-Md_gdi.eot');
     src:  url('../font/HelveticaNeueLTStd-Md_gdi.ttf') format('truetype'),
         url('../font/HelveticaNeueLTStd-Md_gdi.woff') format('woff'),
         url('../font/HelveticaNeueLTStd-Md_gdi.eot?#iefix') format('embedded-opentype');
-    src:  url('../font/HelveticaNeueLTStd-Md_gdi.eot');
+    
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -969,10 +1042,11 @@ footer ul li img{
 
 @font-face {
     font-family: 'SourceSansPro-Ulight';
+    src:  url('../font/HelveticaNeueLTStd-UltLt_gdi.eot');
     src:  url('../font/HelveticaNeueLTStd-UltLt_gdi.ttf') format('truetype'),
         url('../font/HelveticaNeueLTStd-UltLt_gdi.woff') format('woff'),
         url('../font/HelveticaNeueLTStd-UltLt_gdi.eot?#iefix') format('embedded-opentype');
-    src:  url('../font/HelveticaNeueLTStd-UltLt_gdi.eot');
+    
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
