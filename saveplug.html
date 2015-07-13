@@ -28,6 +28,24 @@
         <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-custom.css" rel="stylesheet" type="text/css"/>
         <link href="css/app.css" rel="stylesheet">
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-40632331-5', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        
     </head>
     <!-- NAVBAR
     ================================================== -->
@@ -50,11 +68,11 @@
                             <ul class="nav navbar-nav">
                                 <li ><a href="index.html#benefits" class="msg_overview_nav"></a></li>
                                 <li><a href="index.html#video-save" class="msg_products_nav"></a></li>
-<!--                                <li><a href="#plans" class="msg_plans_nav"></a></li>-->
+                                <!--                                <li><a href="#plans" class="msg_plans_nav"></a></li>-->
                                 <li><a href="index.html#contact" class="msg_contact_nav"></a></li>
                                 <li><a href="#"  onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"><i class="fa fa-shopping-cart"></i></a></li>
 
-                                <li class="active"><a href="http://www.savenergies.com" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
+                                <li class="active"><a href="http://www.savebox.neovu.io" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'NAV', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,20 +115,20 @@
                                     <button id="buy-button" type="submit" class="btn btn-xl btn-success msg_store_button_buy" >  </button>
                                 </div>
                                 <p></p>
-                                 
+
                             </form><!-- END FORM-->
                         </div>
                         <div class="buy-form"> 
-                                     <div class="alert alert-info msg_alert_buy_sending" style="display: none" role="alert">
-                                         
-                                    </div>
-                                    <div class="alert alert-success msg_alert_buy_sucess" style="display: none" role="alert">
-                                         
-                                    </div> 
-                                    <div class="alert alert-danger msg_alert_buy_error " style="display: none" role="alert">
-                                            
-                                    </div>
-                                </div>
+                            <div class="alert alert-info msg_alert_buy_sending" style="display: none" role="alert">
+
+                            </div>
+                            <div class="alert alert-success msg_alert_buy_sucess" style="display: none" role="alert">
+
+                            </div> 
+                            <div class="alert alert-danger msg_alert_buy_error " style="display: none" role="alert">
+
+                            </div>
+                        </div>
                         <div class="col-md-12 padding-top-40">
                             <!--                           <span class="text-muted"> <i class="fa fa-map-marker"></i> Try to buy in a <a href="#">location</a> near from your home.</span>-->
                         </div>
@@ -260,22 +278,7 @@
         <script src="js/app.js"></script>
         <!-- ANALYTICS
         ================================================== -->
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-40632331-3', 'auto');
-            ga('send', 'pageview');
-        </script>
 
     </body>
 </html>
