@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Neovu®</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="Neovu Design e Tecnologia"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <!-- Meta descricao do site -->
+        <!-- for Google -->
+        <meta name="description" content="Neovu Design e Tecnologia" />
+        <meta name="keywords" content="neovu, savehome, saveplug, savenergy, energia, energy, IoT, internet, things, internet of thing, hardware, software, inovação" />
+
+        <meta name="author" content="Neovu Design e Tecnologia">
+        <meta name="copyright" content="Neovu" />
+        <meta name="application-name" content="Neovu" />
+
+        <!-- for Facebook -->          
+        <meta property="og:title" content="Neovu Design e Tecnologia" />
+
+        <meta property="og:image" content="http://neovu.io/img/logo.png" />
+        <meta property="og:url" content="http://neovu.io" />
+        <meta property="og:description" content="A Neovu é uma empresa especializada no desenvolvimento de aplicativos" />
+
+        <!-- for Twitter -->          
+        <meta name="twitter:card" content="Neovu Design e Tecnologia" />
+        <meta name="twitter:title" content="Neovu Design e Tecnologia" />
+        <meta name="twitter:description" content="Neovu Design e Tecnologia" />
+        <meta name="twitter:image" content="http://savehome.neovu.io/img/neovu-logotipo.svg" />
+
         <link rel="shortcut icon" href="http://savehome.neovu.io/img/favicon.png">  
         <link href="bower_components/pace/themes/white/pace-theme-minimal.css" rel="stylesheet" type="text/css"/>
         <script src="bower_components/pace/pace.min.js" type="text/javascript"></script> 
-        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> 
+        
         <link href="css/fonts.css" rel="stylesheet">
         <link href="http://savehome.neovu.io/css/app.css" rel="stylesheet"> 
 
@@ -55,10 +75,10 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li ><a href="#benefits" class="msg_overview_nav"></a></li>
-                                <li><a href="#video-save" class="msg_products_nav"></a></li>
+                                <li ><a href="http://savehome.neovu.io/#benefits" class="msg_overview_nav"></a></li>
+                                <li><a href="http://savehome.neovu.io/#video-save" class="msg_products_nav"></a></li>
 
-                                <li><a href="#contact" class="msg_contact_nav"></a></li>
+                                <li><a href="http://savehome.neovu.io/#contact" class="msg_contact_nav"></a></li>
                                 <li><a href="http://saveplug.neovu.io"  onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Store', eventLabel: 'GoToStore'});"><i class="fa fa-shopping-cart"></i></a></li>
 
                                 <li class="active"><a href="http://savebox.neovu.io" class="msg_login_nav" onClick="ga('send', 'event', {eventCategory: 'Nav', eventAction: 'Nav-Login', eventLabel: 'GoToLogin'});">Login</a></li>
@@ -261,17 +281,23 @@
         </div> 
         <div class="form-group">
             <select id="sidebar" class="form-control">
-                <option value="pt-PT">PT</option>
-                <option value="en-US">EN</option> 
-                <option value="es-ES">ES</option> 
+                <option value="pt_PT">PT</option>
+                <option value="en_US">EN</option> 
+                <option value="es_ES">ES</option> 
             </select>
         </div>
 
-        <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>   
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="bower_components/jquery-i18n-properties/jquery.i18n.properties.js" type="text/javascript"></script>  
+       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]--> 
+        <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>    
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script> 
         <script src="bower_components/scrollspy/jquery.scrollspy.min.js" type="text/javascript"></script>
         <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+         
+        <script src="bower_components/jquery-i18n-properties/jquery.i18n.properties.js" type="text/javascript"></script>
         <script src="js/app.js"></script> 
     </body>
 </html>
