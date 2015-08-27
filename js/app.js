@@ -143,7 +143,7 @@ $(document).ready(function () {
         $("#video-save").height(altura_tela);
     });
 
-    $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, .value2 a, .navbar-header a, .open-saveflow, #saveflow a").on('click', function (e) {
+    $(".navbar-nav li a[href^='#'], p.lead a, #specification p a, .value2 a, .open-saveflow, #saveflow a").on('click', function (e) {
         e.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
